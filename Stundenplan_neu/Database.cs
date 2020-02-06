@@ -101,7 +101,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);
                     cmd.Parameters.AddWithValue("@lehrer2", Fach.Array[1, 2]);
                     cmd.Parameters.AddWithValue("@raum2", Fach.Array[1, 3]);
-                }
+                } 
                 if (Fach.Array[2, 1] == null)
                 {
                     String sql;
