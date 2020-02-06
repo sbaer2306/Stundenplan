@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 
 namespace Stundenplan_neu
-{
+{ v
     class Database
     {
         private MySqlConnection conn;
