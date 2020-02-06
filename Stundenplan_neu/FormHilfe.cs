@@ -58,6 +58,7 @@ namespace Stundenplan_neu
             txtInfo.Text = "Wenn Sie sich Ihren Notenschnitt ausrechnen lassen wollen, drücken Sie den Button Notenberechnung auf der Hauptseite.";
         }
 
+        //testo hilfo buttono aufo italiano//
         private void btnInfo_Click(object sender, EventArgs e)
         {
             txtInfo.Text = "Mit Hilfe des Info Buttons können Sie sich eine Notiz abspeichern";
