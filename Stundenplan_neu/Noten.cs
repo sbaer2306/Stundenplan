@@ -17,6 +17,8 @@ namespace Stundenplan_neu
             InitializeComponent();
         }
 
+        //penis
+
         private void Noten_Load(object sender, EventArgs e)
         {
             int zaeler = 0;
