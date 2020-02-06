@@ -17,9 +17,12 @@ namespace Stundenplan_neu
             InitializeComponent();
         }
 
+        //penise
+
         private void Noten_Load(object sender, EventArgs e)
         {
             int zaeler = 0;
+            //test
 
             lbFach1.Text = Fach.Array[zaeler, 1];
             zaeler++;
