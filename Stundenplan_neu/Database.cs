@@ -25,7 +25,7 @@ namespace Stundenplan_neu
             try
             {
                 conn.Open();
-                // MessageBox.Show("DB-Verbindung OK");
+                 MessageBox.Show("DB-Verbindung OK");
             }
             catch
             {
@@ -37,7 +37,7 @@ namespace Stundenplan_neu
         {
             conn.Close();
         }
-        public bool Schreiben()
+        public void Schreiben()
         {
             //Database dm = new Database();
             //dm.Lesen();
@@ -259,11 +259,10 @@ namespace Stundenplan_neu
             {
                 MessageBox.Show(e.Message);
             }
-            return true;
         }
 
 
-        public bool Lesen()
+        public void Lesen()
         {
             //ArrayList statistikListe = new ArrayList();
 
@@ -282,7 +281,7 @@ namespace Stundenplan_neu
                 Fach.Array[i, 3] = raum;
                 i++;
             }
-            return true;
+            
 
 
             //Datensaetze lesen, Statistikobjekt erzeugen,
