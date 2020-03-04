@@ -14,6 +14,7 @@ namespace Stundenplan_neu
 {
     public partial class FormEditor : Form
     {
+        private Database data;
 
         Form1 form1;
         // liste fuer die Faecher erstellen
@@ -23,6 +24,10 @@ namespace Stundenplan_neu
         {
             InitializeComponent();
             form1 = form_1;
+            // Daten von Datenbank ins Array einlesen
+            //ArrayList statistikListe = new DatenModel().lesen();
+            //ArrayList statistikListe = new DatenModel().lesen();
+            data.Lesen();
             // Die Liste mit der Methode aktualisieren
             refreshFaecher();
             Listeneuerstellen();
@@ -31,7 +36,7 @@ namespace Stundenplan_neu
             int k = Fach.zaehler + 1;
             LblFach.Text = "Fach " + k + " von 7";
             //leeren Eintrag fuer Liste erstellen
-            
+
 
         }
 
