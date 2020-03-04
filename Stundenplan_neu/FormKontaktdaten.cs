@@ -33,13 +33,13 @@ namespace Stundenplan_neu
             LblLehrer7.Text = Fach.Array[6, 2];
 
             // lbl Kontaktdaten mit den Werten aus dem Array befuellen
-            Fach.Array[0, 4] = Properties.Settings.Default.Array04;
+            /*Fach.Array[0, 4] = Properties.Settings.Default.Array04;
             Fach.Array[1, 4] = Properties.Settings.Default.Array14;
             Fach.Array[2, 4] = Properties.Settings.Default.Array24;
             Fach.Array[3, 4] = Properties.Settings.Default.Array34;
             Fach.Array[4, 4] = Properties.Settings.Default.Array44;
             Fach.Array[5, 4] = Properties.Settings.Default.Array54;
-            Fach.Array[6, 4] = Properties.Settings.Default.Array64;
+            Fach.Array[6, 4] = Properties.Settings.Default.Array64;*/
 
             LblKontaktdaten1.Text = Fach.Array[0, 4];
             LblKontaktdaten2.Text = Fach.Array[1, 4];
@@ -64,13 +64,14 @@ namespace Stundenplan_neu
             Fach.Array[5, 4] = TxtBxFach6.Text;
             Fach.Array[6, 4] = TxtBxFach7.Text;
 
+            /*
             Properties.Settings.Default.Array04 = Fach.Array[0, 4];
             Properties.Settings.Default.Array04 = Fach.Array[1, 4];
             Properties.Settings.Default.Array04 = Fach.Array[2, 4];
             Properties.Settings.Default.Array04 = Fach.Array[3, 4];
             Properties.Settings.Default.Array04 = Fach.Array[4, 4];
             Properties.Settings.Default.Array04 = Fach.Array[5, 4];
-            Properties.Settings.Default.Array04 = Fach.Array[6, 4];
+            Properties.Settings.Default.Array04 = Fach.Array[6, 4];*/
  
             //Label Kontakdaten  mit den Werten aus dem Array befuellen
             LblKontaktdaten1.Text = Fach.Array[0, 4];

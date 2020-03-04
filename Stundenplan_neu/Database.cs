@@ -57,12 +57,13 @@ namespace Stundenplan_neu
                 {
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name1, @lehrer1, @raum1,@fa_id1),";
+                    sql += "VALUES(@name1, @lehrer1, @raum1, @kontakt1, @fa_id1);";
 
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@name1", Fach.Array[0, 1]);
                     cmd.Parameters.AddWithValue("@lehrer1", Fach.Array[0, 2]);
                     cmd.Parameters.AddWithValue("@raum1", Fach.Array[0, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt1", Fach.Array[0, 4]);
                     cmd.Parameters.AddWithValue("@fa_id1", 1);
                     cmd.ExecuteNonQuery();
                 }
@@ -70,7 +71,7 @@ namespace Stundenplan_neu
                 {
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name1, lehrer=@lehrer1, raum=@raum1),";
+                    sql += "SET name=@name1, lehrer=@lehrer1, raum=@raum1,";
                     sql += "fa_id = 1;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
@@ -82,145 +83,157 @@ namespace Stundenplan_neu
                 {
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name2, @lehrer2, @raum2, @fa_id2),";
+                    sql += "VALUES(@name2, @lehrer2, @raum2, @kontakt2, @fa_id2);";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);
                     cmd.Parameters.AddWithValue("@lehrer2", Fach.Array[1, 2]);
                     cmd.Parameters.AddWithValue("@raum2", Fach.Array[1, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt2", Fach.Array[1, 4]);
                     cmd.Parameters.AddWithValue("@fa_id2", 2);
                 }
                 else
                 {
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name2, lehrer=@lehrer2, raum=@raum2),";
+                    sql += "SET name=@name2, lehrer=@lehrer2, raum=@raum2, kontakt=@kontakt2,";
                     sql += "fa_id = 2;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);
                     cmd.Parameters.AddWithValue("@lehrer2", Fach.Array[1, 2]);
                     cmd.Parameters.AddWithValue("@raum2", Fach.Array[1, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt2", Fach.Array[1, 4]);
                 } 
                 if (Fach.Array[2, 1] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name3, @lehrer3, @raum3, @fa_id3),";
+                    sql += "VALUES(@name3, @lehrer3, @raum3, @kontakt3, @fa_id3);";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name3", Fach.Array[2, 1]);
                     cmd.Parameters.AddWithValue("@lehrer3", Fach.Array[2, 2]);
                     cmd.Parameters.AddWithValue("@raum3", Fach.Array[2, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt3", Fach.Array[2, 4]);
                     cmd.Parameters.AddWithValue("@fa_id3", 3);
                 }
                 else
                 { 
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name3, lehrer=@lehrer3, raum=@raum3),";
+                    sql += "SET name=@name3, lehrer=@lehrer3, raum=@raum3, kontakt=@kontakt3,";
                     sql += "fa_id = 3;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name3", Fach.Array[2, 1]);
                     cmd.Parameters.AddWithValue("@lehrer3", Fach.Array[2, 2]);
                     cmd.Parameters.AddWithValue("@raum3", Fach.Array[2, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt3", Fach.Array[2, 4]);
                 }
                 if (Fach.Array[1, 1] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name4, @lehrer4, @raum4, @fa_id4),";
+                    sql += "VALUES(@name4, @lehrer4, @raum4, @kontakt4, @fa_id4);";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name4", Fach.Array[3, 1]);
                     cmd.Parameters.AddWithValue("@lehrer4", Fach.Array[3, 2]);
                     cmd.Parameters.AddWithValue("@raum4", Fach.Array[3, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt4", Fach.Array[3, 4]);
                     cmd.Parameters.AddWithValue("@fa_id4", 4);
                 }
                 else
                 {
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name4, lehrer=@lehrer4, raum=@raum4),";
+                    sql += "SET name=@name4, lehrer=@lehrer4, raum=@raum4, kontakt=@kontakt4,";
                     sql += "fa_id = 4;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name4", Fach.Array[3, 1]);
                     cmd.Parameters.AddWithValue("@lehrer4", Fach.Array[3, 2]);
                     cmd.Parameters.AddWithValue("@raum4", Fach.Array[3, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt4", Fach.Array[3, 4]);
                 }
                 if (Fach.Array[1, 1] == null)
                 { 
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name5, @lehrer5, @raum5, @fa_id5),";
+                    sql += "VALUES(@name5, @lehrer5, @raum5, @kontakt5, @fa_id5);";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name5", Fach.Array[4, 1]);
                     cmd.Parameters.AddWithValue("@lehrer5", Fach.Array[4, 2]);
                     cmd.Parameters.AddWithValue("@raum5", Fach.Array[4, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt5", Fach.Array[4, 4]);
                     cmd.Parameters.AddWithValue("@fa_id5", 5);
                 }
                 else
                 {
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name5, lehrer=@lehrer5, raum=@raum5),";
+                    sql += "SET name=@name5, lehrer=@lehrer5, raum=@raum5, kontakt=@kontakt5,";
                     sql += "fa_id = 5;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name5", Fach.Array[4, 1]);
                     cmd.Parameters.AddWithValue("@lehrer5", Fach.Array[4, 2]);
                     cmd.Parameters.AddWithValue("@raum5", Fach.Array[4, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt5", Fach.Array[4, 4]);
                 }
                 if (Fach.Array[1, 1] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name6, @lehrer6, @raum6, @fa_id6),";
+                    sql += "VALUES(@name6, @lehrer6, @raum6, @kontakt6, @fa_id6);";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name6", Fach.Array[5, 1]);
                     cmd.Parameters.AddWithValue("@lehrer6", Fach.Array[5, 2]);
                     cmd.Parameters.AddWithValue("@raum6", Fach.Array[5, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt6", Fach.Array[5, 4]);
                     cmd.Parameters.AddWithValue("@fa_id6", 6);
                 }
                 else
                 {
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name6, lehrer=@lehrer6, raum=@raum6),";
+                    sql += "SET name=@name6, lehrer=@lehrer6, raum=@raum6, kontakt=@kontakt6,";
                     sql += "fa_id = 6;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name6", Fach.Array[5, 1]);
                     cmd.Parameters.AddWithValue("@lehrer6", Fach.Array[5, 2]);
                     cmd.Parameters.AddWithValue("@raum6", Fach.Array[5, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt6", Fach.Array[5, 4]);
                 }
                 if (Fach.Array[1, 1] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
-                    sql += "VALUES(@name7, @lehrer7, @raum7, @fa_id7),";
+                    sql += "VALUES(@name7, @lehrer7, @raum7, @kontakt7, @fa_id7);";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name7", Fach.Array[6, 1]);
                     cmd.Parameters.AddWithValue("@lehrer7", Fach.Array[6, 2]);
                     cmd.Parameters.AddWithValue("@raum7", Fach.Array[6, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt7", Fach.Array[6, 4]);
                     cmd.Parameters.AddWithValue("@fa_id7", 7);
                 }
                 else
                 {
                     String sql;
                     sql = "UPDATE fach";
-                    sql += "SET name=@name7, lehrer=@lehrer7, raum=@raum7),";
+                    sql += "SET name=@name7, lehrer=@lehrer7, raum=@raum7, kontakt=@kontakt7,";
                     sql += "fa_id = 7;";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name7", Fach.Array[6, 1]);
                     cmd.Parameters.AddWithValue("@lehrer7", Fach.Array[6, 2]);
                     cmd.Parameters.AddWithValue("@raum7", Fach.Array[6, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt7", Fach.Array[6, 4]);
                 }
                 /*
                 cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);

@@ -12,9 +12,12 @@ namespace Stundenplan_neu
 {
     public partial class Form1 : Form
     {
+        private Database data;
         public Form1()
         {
+            data.Lesen();
             InitializeComponent();
+            
         }
 
         private void BtnEditor_Click(object sender, EventArgs e)

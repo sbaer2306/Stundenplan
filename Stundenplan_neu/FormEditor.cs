@@ -121,6 +121,8 @@ namespace Stundenplan_neu
                                 // Fuer die Auflistung im loeschen Button (mit Nummer)
                                 //comboBox46.Items.Add(Fach.Array[i, 0] + ". " + Fach.Array[i, 1]);
                                 // Itemlist aktualisieren
+                                data.Schreiben();
+                                data.Lesen();
                                 refreshList();
                                 refreshFaecher();
                                 // Liste aktualisieren
@@ -190,7 +192,7 @@ namespace Stundenplan_neu
             form1.BtnFr8.Text = CmbBxFr8.Text;
             form1.BtnFr9.Text = CmbBxFr9.Text;
 
-            // Buttons speichern
+            /* Buttons speichern
             Properties.Settings.Default.Mo1 = form1.BtnMo1.Text;
             Properties.Settings.Default.Mo2 = form1.BtnMo2.Text;
             Properties.Settings.Default.Mo3 = form1.BtnMo3.Text;
@@ -269,7 +271,7 @@ namespace Stundenplan_neu
             Properties.Settings.Default.Array61 = Fach.Array[6, 1];
             Properties.Settings.Default.Array62 = Fach.Array[6, 2];
             Properties.Settings.Default.Array63 = Fach.Array[6, 3];
-            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Save();*/
         }
         private void BtnClear_Click(object sender, EventArgs e)
         {
@@ -291,6 +293,8 @@ namespace Stundenplan_neu
                     Fach.Array[x, 3] = null;
                     Fach.Array[x, 4] = null;
                 }
+                data.Schreiben();
+                data.Lesen();
                 refreshList();
                 refreshFaecher();
             }
@@ -308,6 +312,7 @@ namespace Stundenplan_neu
                 Textboxarray[x, 1].Text = Fach.Array[x,2];
                 Textboxarray[x, 2].Text = Fach.Array[x,3];
             }
+            data.Lesen();
         }
         public void refreshList()
         {
@@ -323,6 +328,7 @@ namespace Stundenplan_neu
 
         private void BtnAktualisieren_Click(object sender, EventArgs e)
         {
+            data.Lesen();
             refreshFaecher();
             Listeneuerstellen();
             refreshList();
@@ -393,6 +399,8 @@ namespace Stundenplan_neu
                     }
                     if(x==6)
                     {
+                        data.Schreiben();
+                        data.Lesen();
                         refreshFaecher();
                         Listeneuerstellen();
                         refreshList();
