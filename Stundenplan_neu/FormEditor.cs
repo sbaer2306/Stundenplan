@@ -14,7 +14,7 @@ namespace Stundenplan_neu
 {
     public partial class FormEditor : Form
     {
-        private Database data;
+        Database data = new Database();
 
         Form1 form1;
         // liste fuer die Faecher erstellen

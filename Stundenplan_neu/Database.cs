@@ -294,8 +294,8 @@ namespace Stundenplan_neu
                 Fach.Array[i, 3] = raum;
                 i++;
             }
-            
 
+           
 
             //Datensaetze lesen, Statistikobjekt erzeugen,
             // in Arraylist schreiben

@@ -12,12 +12,13 @@ namespace Stundenplan_neu
 {
     public partial class Form1 : Form
     {
-        private Database data;
+        Database data = new Database();
         public Form1()
         {
-            data.Lesen();
+         
             InitializeComponent();
-            
+            data.Lesen();
+
         }
 
         private void BtnEditor_Click(object sender, EventArgs e)
@@ -472,6 +473,11 @@ namespace Stundenplan_neu
             Fach.Array[6, 3] = Properties.Settings.Default.Array63;
             Fach.Array[6, 4] = Properties.Settings.Default.Array64;
             Fach.Array[6, 5] = Properties.Settings.Default.Array65;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            data.Lesen();
         }
     }
 }
