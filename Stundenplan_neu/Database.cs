@@ -13,6 +13,7 @@ namespace Stundenplan_neu
 { 
     class Database
     {
+
         private MySqlConnection conn;
 
         public Database()
@@ -50,13 +51,35 @@ namespace Stundenplan_neu
             sql += "(@name7, @lehrer7, @raum7,@fa_id7);";
             */
 
+            string[,] AArray = new string[7, 5];
+
+            MySqlDataAdapter da = new MySqlDataAdapter(
+            "SELECT * FROM fach;", conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            int i = 0;
+            foreach (DataRow row in dt.Rows)
+            {
+                string name = row.ItemArray[0].ToString();
+                string lehrer = row.ItemArray[1].ToString();
+                string raum = row.ItemArray[2].ToString();
+                string kontakt = row.ItemArray[3].ToString();
+                string fa_id = row.ItemArray[4].ToString();
+                AArray[i, 0] = name;
+                AArray[i, 1] = lehrer;
+                AArray[i, 2] = raum;
+                AArray[i, 3] = kontakt;
+                AArray[i, 4] = fa_id;
+                i++;
+            }
+
             try
             {
 
-                if (Fach.Array[0, 1] == null)
+                if (AArray[0, 4] == null)
                 {
                     String sql;
-                    sql = "INSERT INTO fach";
+                    sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
                     sql += "VALUES(@name1, @lehrer1, @raum1, @kontakt1, @fa_id1);";
 
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
@@ -66,20 +89,25 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt1", Fach.Array[0, 4]);
                     cmd.Parameters.AddWithValue("@fa_id1", 1);
                     cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("test");
                 }
                 else
                 {
+
                     String sql;
-                    sql = "UPDATE fach";
-                    sql += "SET name=@name1, lehrer=@lehrer1, raum=@raum1,";
-                    sql += "fa_id = 1;";
+                    sql = "UPDATE `fach` SET `name`=@name1,`lehrer`=@lehrer1,`raum`=@raum1,`kontakt`=@kontakt1 WHERE fa_id=1";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name1", Fach.Array[0, 1]);
                     cmd.Parameters.AddWithValue("@lehrer1", Fach.Array[0, 2]);
                     cmd.Parameters.AddWithValue("@raum1", Fach.Array[0, 3]);
+                    cmd.Parameters.AddWithValue("@kontakt1", Fach.Array[0, 4]);
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("test2");
                 }
-                if (Fach.Array[1, 1] == null)
+                if (AArray[1, 4] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
@@ -95,9 +123,7 @@ namespace Stundenplan_neu
                 else
                 {
                     String sql;
-                    sql = "UPDATE fach";
-                    sql += "SET name=@name2, lehrer=@lehrer2, raum=@raum2, kontakt=@kontakt2,";
-                    sql += "fa_id = 2;";
+                    sql = "UPDATE `fach` SET `name`=@name2,`lehrer`=@lehrer2,`raum`=@raum2,`kontakt`=@kontakt2 WHERE fa_id=2";
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                     cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);
@@ -105,7 +131,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@raum2", Fach.Array[1, 3]);
                     cmd.Parameters.AddWithValue("@kontakt2", Fach.Array[1, 4]);
                 } 
-                if (Fach.Array[2, 1] == null)
+                if (AArray[2, 4] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
@@ -131,7 +157,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@raum3", Fach.Array[2, 3]);
                     cmd.Parameters.AddWithValue("@kontakt3", Fach.Array[2, 4]);
                 }
-                if (Fach.Array[1, 1] == null)
+                if (AArray[3, 4] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
@@ -157,7 +183,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@raum4", Fach.Array[3, 3]);
                     cmd.Parameters.AddWithValue("@kontakt4", Fach.Array[3, 4]);
                 }
-                if (Fach.Array[1, 1] == null)
+                if (AArray[4, 4] == null)
                 { 
                     String sql;
                     sql = "INSERT INTO fach";
@@ -183,7 +209,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@raum5", Fach.Array[4, 3]);
                     cmd.Parameters.AddWithValue("@kontakt5", Fach.Array[4, 4]);
                 }
-                if (Fach.Array[1, 1] == null)
+                if (Fach.Array[5, 4] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
@@ -209,7 +235,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@raum6", Fach.Array[5, 3]);
                     cmd.Parameters.AddWithValue("@kontakt6", Fach.Array[5, 4]);
                 }
-                if (Fach.Array[1, 1] == null)
+                if (Fach.Array[6, 4] == null)
                 {
                     String sql;
                     sql = "INSERT INTO fach";
@@ -235,6 +261,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@raum7", Fach.Array[6, 3]);
                     cmd.Parameters.AddWithValue("@kontakt7", Fach.Array[6, 4]);
                 }
+                */
                 /*
                 cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);
                 cmd.Parameters.AddWithValue("@lehrer2", Fach.Array[1, 2]);
@@ -286,16 +313,19 @@ namespace Stundenplan_neu
             int i = 0;
             foreach (DataRow row in dt.Rows)
             {
-                string name = row.ItemArray[1].ToString();
-                string lehrer = row.ItemArray[2].ToString();
-                string raum = row.ItemArray[3].ToString();
+                string name = row.ItemArray[0].ToString();
+                string lehrer = row.ItemArray[1].ToString();
+                string raum = row.ItemArray[2].ToString();
+                string kontakt = row.ItemArray[3].ToString();
                 Fach.Array[i, 1] = name;
                 Fach.Array[i, 2] = lehrer;
                 Fach.Array[i, 3] = raum;
+                Fach.Array[i, 4] = kontakt;
                 i++;
             }
 
-           
+
+
 
             //Datensaetze lesen, Statistikobjekt erzeugen,
             // in Arraylist schreiben

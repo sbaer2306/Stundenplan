@@ -29,7 +29,7 @@ namespace Stundenplan_neu
             //ArrayList statistikListe = new DatenModel().lesen();
             data.Lesen();
             // Die Liste mit der Methode aktualisieren
-            refreshFaecher();
+            //refreshFaecher();
             Listeneuerstellen();
             refreshList();
             // Den Zaehler +1 setzen um die Zahl im Label richtig zu setzen
@@ -303,6 +303,7 @@ namespace Stundenplan_neu
 
         public void refreshFaecher()
         {
+            data.Lesen();
             //Die Textboxen mit den Eintragen von Fach/Lehrer/Raum aktualisieren
             TextBox[,] Textboxarray = new TextBox[7, 3] { { TxtBxFach1, TxtBxLehrer1, TxtBxRaum1 }, { TxtBxFach2, TxtBxLehrer2, TxtBxRaum2 }, { TxtBxFach3, TxtBxLehrer3, TxtBxRaum3 }, { TxtBxFach4, TxtBxLehrer4, TxtBxRaum4 }, { TxtBxFach5, TxtBxLehrer5, TxtBxRaum5 }, { TxtBxFach6, TxtBxLehrer6, TxtBxRaum6}, { TxtBxFach7, TxtBxLehrer7, TxtBxRaum7 } };
             for (int x = 0; x < 7; x++)
@@ -312,7 +313,6 @@ namespace Stundenplan_neu
                 Textboxarray[x, 1].Text = Fach.Array[x,2];
                 Textboxarray[x, 2].Text = Fach.Array[x,3];
             }
-            data.Lesen();
         }
         public void refreshList()
         {
@@ -395,15 +395,16 @@ namespace Stundenplan_neu
                     if( q== 0)
                     {
                         MessageBox.Show("Aenderungen gemacht");
+                        data.Schreiben();
                         q++;
                     }
                     if(x==6)
                     {
                         data.Schreiben();
-                        data.Lesen();
+                        /*data.Lesen();
                         refreshFaecher();
                         Listeneuerstellen();
-                        refreshList();
+                        refreshList();*/
                     }
 
                 }

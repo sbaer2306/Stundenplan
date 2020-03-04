@@ -477,7 +477,7 @@ namespace Stundenplan_neu
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            data.Lesen();
+            data.Schreiben();
         }
     }
 }
