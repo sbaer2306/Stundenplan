@@ -293,7 +293,8 @@ namespace Stundenplan_neu
                     Fach.Array[x, 3] = null;
                     Fach.Array[x, 4] = null;
                 }
-                data.Schreiben();
+                data.Loeschen();
+                //data.Schreiben();
                 data.Lesen();
                 refreshList();
                 refreshFaecher();

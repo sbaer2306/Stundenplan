@@ -321,94 +321,14 @@ namespace Stundenplan_neu
                 i++;
             }
 
-
-
-
-            //Datensaetze lesen, Statistikobjekt erzeugen,
-            // in Arraylist schreiben
-
-
-            /* foreach (DataRow row in dt.Rows)
-             {
-                 String name = row.ItemArray[1].ToString();
-                 int ergebnis = Convert.ToInt32(row.ItemArray[2]);
-                 DateTime zeit = Convert.ToDateTime(row.ItemArray[3]);
-
-                 Statistik s = new Statistik(name, ergebnis, zeit);
-                 statistikListe.Add(s);
-             }
-
-             return statistikListe;
-         }
-         /*Fach.Array[0, 1];
-          Properties.Settings.Default.Array02 = Fach.Array[0, 2];
-          Properties.Settings.Default.Array03 = Fach.Array[0, 3];
-          /*public bool schreiben(Statistik s1, Statistik s2)
-          {
-              String sql;
-              sql = "INSERT INTO statistik (st_name,st_ergebnis,st_zeit)";
-              sql += "VALUES(@name1, @ergebnis1, @zeit1),";
-              sql += "(@name2, @ergebnis2, @zeit2);";
-
-              try
-              {
-
-                      public static string[,] Array = new string[7, 6];
-                      Fach.Array[i, 1] = name;
-                      Fach.Array[i, 2] = lehrer;
-                                  Fach.Array[i, 3] = raum;
-                                  Fach.Array[i, 0] = s;
-
-
-                     public static string[,] Array = new string[7,6];
-                     Fach.Array[i, 1] = name;
-                                  Fach.Array[i, 2] = lehrer;
-                                  Fach.Array[i, 3] = raum;
-                                  Fach.Array[i, 0] = s;
-
-
-
-                  MySqlCommand cmd = new MySqlCommand(sql, conn);
-                  cmd.Parameters.AddWithValue("@name1", s1.Name);
-                  cmd.Parameters.AddWithValue("@ergebnis1", s1.Ergebnis);
-                  cmd.Parameters.AddWithValue("@zeit1", s1.Zeit);
-                  cmd.Parameters.AddWithValue("@name2", s2.Name);
-                  cmd.Parameters.AddWithValue("@ergebnis2", s2.Ergebnis);
-                  cmd.Parameters.AddWithValue("@zeit2", s2.Zeit);
-
-                  cmd.ExecuteNonQuery();
-              }
-              catch (Exception e)
-              {
-                  MessageBox.Show(e.Message);
-              }
-              return true;
-          }
-
-          public ArrayList lesen()
-          {
-              ArrayList statistikListe = new ArrayList();
-
-              MySqlDataAdapter da = new MySqlDataAdapter(
-                  "SELECT * FROM statistik;", conn);
-              DataTable dt = new DataTable();
-              da.Fill(dt);
-
-              //Datensaetze lesen, Statistikobjekt erzeugen,
-              // in Arraylist schreiben
-              foreach (DataRow row in dt.Rows)
-              {
-                  String name = row.ItemArray[1].ToString();
-                  int ergebnis = Convert.ToInt32(row.ItemArray[2]);
-                  DateTime zeit = Convert.ToDateTime(row.ItemArray[3]);
-
-                  Statistik s = new Statistik(name, ergebnis, zeit);
-                  statistikListe.Add(s);
-              }
-
-              return statistikListe;
-          }
-          */
+    
+        }
+        public void Loeschen()
+        {
+            String sql;
+            sql = "DELETE FROM `fach` ";
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.ExecuteNonQuery();
         }
     }
 }
