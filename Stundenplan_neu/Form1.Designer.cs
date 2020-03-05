@@ -98,7 +98,6 @@
             this.btnHilfe = new System.Windows.Forms.Button();
             this.btnBeenden = new System.Windows.Forms.Button();
             this.BtnInfos = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblStd1
@@ -545,6 +544,7 @@
             this.BtnDo1.Size = new System.Drawing.Size(85, 45);
             this.BtnDo1.TabIndex = 85;
             this.BtnDo1.UseVisualStyleBackColor = true;
+            this.BtnDo1.Click += new System.EventHandler(this.BtnDo1_Click_1);
             // 
             // BtnDo2
             // 
@@ -553,6 +553,7 @@
             this.BtnDo2.Size = new System.Drawing.Size(85, 45);
             this.BtnDo2.TabIndex = 86;
             this.BtnDo2.UseVisualStyleBackColor = true;
+            this.BtnDo2.Click += new System.EventHandler(this.BtnDo2_Click_1);
             // 
             // BtnDo3
             // 
@@ -617,6 +618,7 @@
             this.BtnFr1.Size = new System.Drawing.Size(85, 45);
             this.BtnFr1.TabIndex = 94;
             this.BtnFr1.UseVisualStyleBackColor = true;
+            this.BtnFr1.Click += new System.EventHandler(this.BtnFr1_Click_1);
             // 
             // BtnFr2
             // 
@@ -719,7 +721,7 @@
             // 
             this.BtnNoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNoten.Location = new System.Drawing.Point(12, 510);
-            this.BtnNoten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnNoten.Margin = new System.Windows.Forms.Padding(2);
             this.BtnNoten.Name = "BtnNoten";
             this.BtnNoten.Size = new System.Drawing.Size(105, 31);
             this.BtnNoten.TabIndex = 109;
@@ -753,7 +755,7 @@
             // 
             this.BtnInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnInfos.Location = new System.Drawing.Point(12, 469);
-            this.BtnInfos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnInfos.Margin = new System.Windows.Forms.Padding(2);
             this.BtnInfos.Name = "BtnInfos";
             this.BtnInfos.Size = new System.Drawing.Size(105, 31);
             this.BtnInfos.TabIndex = 112;
@@ -761,22 +763,11 @@
             this.BtnInfos.UseVisualStyleBackColor = true;
             this.BtnInfos.Click += new System.EventHandler(this.BtnInfos_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(678, 510);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 113;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 644);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnInfos);
             this.Controls.Add(this.btnBeenden);
             this.Controls.Add(this.btnHilfe);
@@ -927,7 +918,6 @@
         private System.Windows.Forms.Button btnHilfe;
         private System.Windows.Forms.Button btnBeenden;
         private System.Windows.Forms.Button BtnInfos;
-        private System.Windows.Forms.Button button1;
     }
 }
 
