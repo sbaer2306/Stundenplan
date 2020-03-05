@@ -12,9 +12,11 @@ namespace Stundenplan_neu
 {
     public partial class FormKontaktdaten : Form
     {
+        Database data = new Database();
         public FormKontaktdaten()
         {
             InitializeComponent();
+            data.Lesen();
             // lbl Fach mit den Werten aus dem Array befuellen
             LblFach1.Text = Fach.Array[0, 1];
             LblFach2.Text = Fach.Array[1, 1];
@@ -81,8 +83,10 @@ namespace Stundenplan_neu
             LblKontaktdaten5.Text = Fach.Array[4, 4];
             LblKontaktdaten6.Text = Fach.Array[5, 4]; 
             LblKontaktdaten7.Text = Fach.Array[6, 4];
-            
+
+            data.Schreiben();
             MessageBox.Show("Kontakdaten eingetragen");
+            data.Lesen();
         }
 
         private void BtnBeenden_Click(object sender, EventArgs e)

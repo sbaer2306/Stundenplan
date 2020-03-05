@@ -198,38 +198,36 @@ namespace Stundenplan_neu
 
         private void BtnMi4_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 21;
+            Fach.zahler = 22;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnMi5_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 22;
+            Fach.zahler = 23;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnMi6_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 23;
+            Fach.zahler = 24;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
         private void BtnMi7_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 24;
-            FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
-            frmNot.ShowDialog();
-        }
-
-        private void BtnMi8_Click(object sender, EventArgs e)
-        {
             Fach.zahler = 25;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
-
+        private void BtnMi8_Click(object sender, EventArgs e)
+        {
+            Fach.zahler = 26;
+            FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
+            frmNot.ShowDialog();
+        }
         private void BtnMi9_Click(object sender, EventArgs e)
         {
             Fach.zahler = 26;
@@ -469,14 +467,5 @@ namespace Stundenplan_neu
             data.Schreiben();
         }
 
-        private void BtnDo1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnDo2_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

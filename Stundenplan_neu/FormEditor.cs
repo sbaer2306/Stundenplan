@@ -29,7 +29,7 @@ namespace Stundenplan_neu
             //ArrayList statistikListe = new DatenModel().lesen();
             data.Lesen();
             // Die Liste mit der Methode aktualisieren
-            //refreshFaecher();
+            refreshFaecher();
             Listeneuerstellen();
             refreshList();
             // Den Zaehler +1 setzen um die Zahl im Label richtig zu setzen

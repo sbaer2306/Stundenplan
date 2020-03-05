@@ -98,7 +98,6 @@
             this.btnHilfe = new System.Windows.Forms.Button();
             this.btnBeenden = new System.Windows.Forms.Button();
             this.BtnInfos = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblStd1
@@ -545,15 +544,16 @@
             this.BtnDo1.Size = new System.Drawing.Size(85, 45);
             this.BtnDo1.TabIndex = 86;
             this.BtnDo1.UseVisualStyleBackColor = true;
-            this.BtnDo1.Click += new System.EventHandler(this.BtnFr9_Click);
+            this.BtnDo1.Click += new System.EventHandler(this.BtnDo1_Click_1);
             // 
             // BtnDo2
             // 
             this.BtnDo2.Location = new System.Drawing.Point(459, 120);
             this.BtnDo2.Name = "BtnDo2";
             this.BtnDo2.Size = new System.Drawing.Size(85, 45);
-            this.BtnDo2.TabIndex = 114;
-            this.BtnDo2.Click += new System.EventHandler(this.BtnDo2_Click);
+            this.BtnDo2.TabIndex = 86;
+            this.BtnDo2.UseVisualStyleBackColor = true;
+            this.BtnDo2.Click += new System.EventHandler(this.BtnDo2_Click_1);
             // 
             // BtnDo3
             // 
@@ -625,7 +625,6 @@
             this.BtnFr1.Size = new System.Drawing.Size(85, 45);
             this.BtnFr1.TabIndex = 94;
             this.BtnFr1.UseVisualStyleBackColor = true;
-            this.BtnFr1.Click += new System.EventHandler(this.BtnFr1_Click);
             // 
             // BtnFr2
             // 
@@ -777,22 +776,11 @@
             this.BtnInfos.Text = "Infos";
             this.BtnInfos.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(678, 510);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 113;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 644);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnInfos);
             this.Controls.Add(this.btnBeenden);
             this.Controls.Add(this.btnHilfe);
@@ -943,7 +931,6 @@
         private System.Windows.Forms.Button btnHilfe;
         private System.Windows.Forms.Button btnBeenden;
         private System.Windows.Forms.Button BtnInfos;
-        private System.Windows.Forms.Button button1;
     }
 }
 
