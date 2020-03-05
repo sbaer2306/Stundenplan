@@ -39,19 +39,27 @@ namespace Stundenplan_neu
             conn.Close();
         }
 
-        public void NotizenSchreiben()
+        public void NotenSchreiben()
         {
+            try
+            {
             String sql;
-            sql = "INSERT INTO notizen(name,lehrer,raum,kontakt,fa_id)";
-            sql += "VALUES(@name1, @lehrer1, @raum1, @kontakt1, @fa_id1)";
+            sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3,no_id,fa_id) VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
+           // sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3, no_id, fa_id)";
+            //sql += "VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
 
             MySqlCommand cmd = new MySqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@name1", Fach.Array[0, 1]);
-            cmd.Parameters.AddWithValue("@lehrer1", Fach.Array[0, 2]);
-            cmd.Parameters.AddWithValue("@raum1", Fach.Array[0, 3]);
-            cmd.Parameters.AddWithValue("@kontakt1", Fach.Array[0, 4]);
-            cmd.Parameters.AddWithValue("@fa_id1", 1);
+            /*cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[7, 3]);
+            cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[7, 4]);
+            cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[7, 5]);
+            cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[7, 6]);
+            cmd.Parameters.AddWithValue("@schulaufgabe1", Fach.Array[7, 0]);
+            cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[7, 1]);
+            cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[7, 2]);
+            cmd.Parameters.AddWithValue("@no_id1", 1);
+            cmd.Parameters.AddWithValue("@fa_id1", 1);*/
             cmd.ExecuteNonQuery();
+
         }
 
         public void Schreiben()

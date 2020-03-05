@@ -12,6 +12,8 @@ namespace Stundenplan_neu
 {
     public partial class Noten : Form
     {
+        Database data = new Database();
+
         public Noten()
         {
             InitializeComponent();
@@ -158,7 +160,6 @@ namespace Stundenplan_neu
 
             // Fach 1 Berechnung
             Wert = int.Parse(tbF1S1.Text);      // Convertieren
-
             if (Wert != 0)
             {
                 i = i + 2;              // Notenzähler
@@ -541,6 +542,8 @@ namespace Stundenplan_neu
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
+            data.NotenSchreiben();
+
             // Schulaufgaben Speichern
             // In Array speichern
             Fach.Array[7, 0] = tbF1S1.Text;
@@ -1152,6 +1155,11 @@ namespace Stundenplan_neu
                 e.Handled = true;
                 MessageBox.Show("Falsche Eingabe");
             }
+        }
+
+        private void tbF1S1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
