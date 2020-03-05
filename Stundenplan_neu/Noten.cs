@@ -542,7 +542,6 @@ namespace Stundenplan_neu
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-            data.NotenSchreiben();
 
             // Schulaufgaben Speichern
             // In Array speichern
@@ -652,8 +651,8 @@ namespace Stundenplan_neu
             Fach.Array[13, 4] = tbF7E2.Text;
             Fach.Array[13, 5] = tbF7E3.Text;
             Fach.Array[13, 6] = tbF7E4.Text;
-           
- 
+
+            data.NotenSchreiben();
         }
 
         private void btnende_Click(object sender, EventArgs e)

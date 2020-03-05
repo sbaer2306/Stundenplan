@@ -51,6 +51,8 @@ namespace Stundenplan_neu
             LblKontaktdaten6.Text = Fach.Array[5, 4];
             LblKontaktdaten7.Text = Fach.Array[6, 4];
 
+            Visibility();
+
         }
 
         private void BtnKontakdateneintragen_Click(object sender, EventArgs e)
@@ -89,6 +91,13 @@ namespace Stundenplan_neu
             data.Lesen();
         }
 
+        private void Visibility()
+        {
+            if (LblKontaktdaten1.Text == null)
+                LblKontaktdaten1.Visible = false;
+            else
+                LblKontaktdaten1.Visible = true;
+        }
         private void BtnBeenden_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Wollen Sie wirklich Beenden?", "Sicher?", MessageBoxButtons.OKCancel, MessageBoxIcon.Error) == DialogResult.OK)

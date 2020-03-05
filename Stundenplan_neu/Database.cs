@@ -26,7 +26,7 @@ namespace Stundenplan_neu
             try
             {
                 conn.Open();
-                 MessageBox.Show("DB-Verbindung OK");
+                 //MessageBox.Show("DB-Verbindung OK");
             }
             catch
             {
@@ -41,24 +41,49 @@ namespace Stundenplan_neu
 
         public void NotenSchreiben()
         {
+            string[,] BArray = new string[7, 5];
+
+            MySqlDataAdapter da = new MySqlDataAdapter(
+            "SELECT * FROM fach;", conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            int i = 0;
+            foreach (DataRow row in dt.Rows)
+            {
+                string name = row.ItemArray[0].ToString();
+                string lehrer = row.ItemArray[1].ToString();
+                string raum = row.ItemArray[2].ToString();
+                string kontakt = row.ItemArray[3].ToString();
+                string fa_id = row.ItemArray[4].ToString();
+                BArray[i, 0] = name;
+                BArray[i, 1] = lehrer;
+                BArray[i, 2] = raum;
+                BArray[i, 3] = kontakt;
+                BArray[i, 4] = fa_id;
+                i++;
+            }
+
             try
             {
+                MessageBox.Show(Fach.Array[7, 1]);
                 String sql;
-                sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3,no_id,fa_id) VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
-                // sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3, no_id, fa_id)";
-                //sql += "VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
+                sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                sql += "VALUES(@no_id1, @fa_id1, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
-                /*cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[7, 3]);
+
+                cmd.Parameters.AddWithValue("@no_id1", 1);
+                cmd.Parameters.AddWithValue("@fa_id1", 1);
+                cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[7, 0]));
+                cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[7, 1]);
+                cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[7, 2]);
+                cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[7, 3]);
                 cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[7, 4]);
                 cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[7, 5]);
                 cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[7, 6]);
-                cmd.Parameters.AddWithValue("@schulaufgabe1", Fach.Array[7, 0]);
-                cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[7, 1]);
-                cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[7, 2]);
-                cmd.Parameters.AddWithValue("@no_id1", 1);
-                cmd.Parameters.AddWithValue("@fa_id1", 1);*/
+
                 cmd.ExecuteNonQuery();
+
             }
             catch (Exception e)
             {
@@ -288,7 +313,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt7", Fach.Array[6, 4]);
                     cmd.ExecuteNonQuery();
                 }
-                
+
                 /*
                 cmd.Parameters.AddWithValue("@name2", Fach.Array[1, 1]);
                 cmd.Parameters.AddWithValue("@lehrer2", Fach.Array[1, 2]);
@@ -320,7 +345,7 @@ namespace Stundenplan_neu
 
 
                 cmd.ExecuteNonQuery();*/
-
+                return;
             }
             catch (Exception e)
             {
@@ -350,15 +375,17 @@ namespace Stundenplan_neu
                 Fach.Array[i, 4] = kontakt;
                 i++;
             }
-
+            return;
     
         }
         public void Loeschen()
         {
             String sql;
-            sql = "DELETE FROM `fach` ";
+            sql = "DELETE FROM Fach ";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
+
+            return;
         }
 
         public void LoeschenE(int t)
