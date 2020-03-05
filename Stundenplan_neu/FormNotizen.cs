@@ -80,7 +80,6 @@ namespace Stundenplan_neu
             Properties.Settings.Default.ArrayNo0 = Fach.ArrayNn[44];
             Properties.Settings.Default.ArrayNo0 = Fach.ArrayNn[45];
             Properties.Settings.Default.ArrayNo0 = Fach.ArrayNn[46];
-            Properties.Settings.Default.ArrayNo0 = Fach.ArrayNn[47];
         }
 
         private void btnBeenden_Click(object sender, EventArgs e)

@@ -34,11 +34,6 @@ namespace Stundenplan_neu
             formkontaktdaten.ShowDialog(); //formkontakdaten anzeigen
         }
 
-        private void BtnMi8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Noten frm = new Noten();
@@ -228,147 +223,141 @@ namespace Stundenplan_neu
             frmNot.ShowDialog();
         }
 
-        private void BtnMi9_Click(object sender, EventArgs e)
+        private void BtnMi8_Click(object sender, EventArgs e)
         {
             Fach.zahler = 25;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
-        private void BtnInfos_Click(object sender, EventArgs e)
+        private void BtnMi9_Click(object sender, EventArgs e)
+        {
+            Fach.zahler = 26;
+            FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
+            frmNot.ShowDialog();
+        }
+
+        private void BtnDo1_Click(object sender, EventArgs e)
         {
             Fach.zahler = 27;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
-
-        private void BtnWeiter_Click(object sender, EventArgs e)
-        {
-            Fach.zahler = 28;
-            FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
-            frmNot.ShowDialog();
-        }
-        private void BtnDo1_Click(object sender, EventArgs e)
-        {
-            Fach.zahler = 29;
-            FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
-            frmNot.ShowDialog();
-        }
         private void BtnDo2_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 30;
+            Fach.zahler = 28;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo3_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 31;
+            Fach.zahler = 29;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo4_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 32;
+            Fach.zahler = 30;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo5_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 33;
+            Fach.zahler = 31;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo6_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 34;
+            Fach.zahler = 32;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo7_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 35;
+            Fach.zahler = 33;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo8_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 36;
+            Fach.zahler = 34;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnDo9_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 37;
+            Fach.zahler = 35;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr1_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 38;
+            Fach.zahler = 36;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr2_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 39;
+            Fach.zahler = 37;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr3_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 40;
+            Fach.zahler = 38;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr4_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 41;
+            Fach.zahler = 39;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr5_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 42;
+            Fach.zahler = 40;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr6_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 43;
+            Fach.zahler = 41;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr7_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 44;
+            Fach.zahler = 42;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr8_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 45;
+            Fach.zahler = 43;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
 
         private void BtnFr9_Click(object sender, EventArgs e)
         {
-            Fach.zahler = 46;
+            Fach.zahler = 44;
             FormNotizen frmNot = new FormNotizen(); //Notizen einfügen
             frmNot.ShowDialog();
         }
@@ -478,6 +467,16 @@ namespace Stundenplan_neu
         private void button1_Click_1(object sender, EventArgs e)
         {
             data.Schreiben();
+        }
+
+        private void BtnDo1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDo2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

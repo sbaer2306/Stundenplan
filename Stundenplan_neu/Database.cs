@@ -64,12 +64,12 @@ namespace Stundenplan_neu
                 string lehrer = row.ItemArray[1].ToString();
                 string raum = row.ItemArray[2].ToString();
                 string kontakt = row.ItemArray[3].ToString();
-                string fa_id = row.ItemArray[4].ToString();
+              //  string fa_id = row.ItemArray[4].ToString();
                 AArray[i, 0] = name;
                 AArray[i, 1] = lehrer;
                 AArray[i, 2] = raum;
                 AArray[i, 3] = kontakt;
-                AArray[i, 4] = fa_id;
+               // AArray[i, 4] = fa_id;
                 i++;
             }
 
