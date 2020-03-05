@@ -43,22 +43,27 @@ namespace Stundenplan_neu
         {
             try
             {
-            String sql;
-            sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3,no_id,fa_id) VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
-           // sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3, no_id, fa_id)";
-            //sql += "VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
+                String sql;
+                sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3,no_id,fa_id) VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
+                // sql = "INSERT INTO noten(sa1, sa2, sa3, ex1, ex2, ex3, no_id, fa_id)";
+                //sql += "VALUES(1, 2 , 3, 4, 5, 6, 1, 1)";
 
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            /*cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[7, 3]);
-            cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[7, 4]);
-            cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[7, 5]);
-            cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[7, 6]);
-            cmd.Parameters.AddWithValue("@schulaufgabe1", Fach.Array[7, 0]);
-            cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[7, 1]);
-            cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[7, 2]);
-            cmd.Parameters.AddWithValue("@no_id1", 1);
-            cmd.Parameters.AddWithValue("@fa_id1", 1);*/
-            cmd.ExecuteNonQuery();
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                /*cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[7, 3]);
+                cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[7, 4]);
+                cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[7, 5]);
+                cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[7, 6]);
+                cmd.Parameters.AddWithValue("@schulaufgabe1", Fach.Array[7, 0]);
+                cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[7, 1]);
+                cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[7, 2]);
+                cmd.Parameters.AddWithValue("@no_id1", 1);
+                cmd.Parameters.AddWithValue("@fa_id1", 1);*/
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
 
         }
 
@@ -88,12 +93,12 @@ namespace Stundenplan_neu
                 string lehrer = row.ItemArray[1].ToString();
                 string raum = row.ItemArray[2].ToString();
                 string kontakt = row.ItemArray[3].ToString();
-              //  string fa_id = row.ItemArray[4].ToString();
+                string fa_id = row.ItemArray[4].ToString();
                 AArray[i, 0] = name;
                 AArray[i, 1] = lehrer;
                 AArray[i, 2] = raum;
                 AArray[i, 3] = kontakt;
-               // AArray[i, 4] = fa_id;
+                AArray[i, 4] = fa_id;
                 i++;
             }
 

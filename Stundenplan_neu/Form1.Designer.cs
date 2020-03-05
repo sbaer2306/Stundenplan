@@ -775,6 +775,7 @@
             this.BtnInfos.TabIndex = 112;
             this.BtnInfos.Text = "Infos";
             this.BtnInfos.UseVisualStyleBackColor = true;
+            this.BtnInfos.Click += new System.EventHandler(this.BtnInfos_Click);
             // 
             // Form1
             // 

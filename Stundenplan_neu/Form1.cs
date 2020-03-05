@@ -59,6 +59,11 @@ namespace Stundenplan_neu
             }
         }
 
+        private void BtnInfos_Click(object sender, EventArgs e)
+        {
+            FormInfos frminfo = new FormInfos();
+            frminfo.ShowDialog();
+        }
 
         private void BtnMo1_Click(object sender, EventArgs e)
         {

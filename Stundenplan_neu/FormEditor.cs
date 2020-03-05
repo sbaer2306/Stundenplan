@@ -33,7 +33,17 @@ namespace Stundenplan_neu
             Listeneuerstellen();
             refreshList();
             // Den Zaehler +1 setzen um die Zahl im Label richtig zu setzen
+            for (int a = 0; a < 7; a++)
+            {
+                if (string.IsNullOrEmpty(Fach.Array[a, 1]))
+                {
+                    Fach.zaehler++;
+                    return;
+                }
+
+            }
             int k = Fach.zaehler + 1;
+            MessageBox.Show(k.ToString());
             LblFach.Text = "Fach " + k + " von 7";
             //leeren Eintrag fuer Liste erstellen
 
@@ -43,6 +53,15 @@ namespace Stundenplan_neu
         private void BtnFachhinzufuegen_Click(object sender, EventArgs e)
         {
             int x = 0;
+            for (int a = 0; a < 7; a++)
+            {
+                if (string.IsNullOrEmpty(Fach.Array[a, 1]))
+                {
+                    x = a;
+                }
+
+            }
+            //MessageBox.Show(Fach.zaehler.ToString());
             int i = Fach.zaehler;
             // Die eingegeben Werte aus den Textboxen holen
             string name = txbFachname.Text;
@@ -58,47 +77,56 @@ namespace Stundenplan_neu
                 if (name == "")
                 {
                     MessageBox.Show("Feld Name ist leer");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (txbFachname.Text.Length > 12)
                 {
                     MessageBox.Show("Fachname zu lange");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (System.Text.RegularExpressions.Regex.IsMatch(txbFachname.Text, "[ ^ 0-9]"))
                 {
                     MessageBox.Show("Bitte keinen Nummerischen Fachnnamen eintragen");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (lehrer == "")
                 {
                     MessageBox.Show("Feld Lehrer ist leer");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (txbLehrer.Text.Length > 14)
                 {
                     MessageBox.Show("Lehrername zu lange");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (System.Text.RegularExpressions.Regex.IsMatch(txbLehrer.Text, "[ ^ 0-9]"))
                 {
                     MessageBox.Show("Bitte keinen Nummerischen Lehrernamen eintragen");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (raum == "")
                 {
                     MessageBox.Show("Feld Raum ist leer");
+                    Fach.zaehler--;
                     return; 
                 }
                 else if (x != 1)
                 {
                     MessageBox.Show("Bitte Nummmerischen Wert eintragen");
+                    Fach.zaehler--;
                     return;
                 }
                 else if (txbFachname.Text.Length > 8)
                 {
                     MessageBox.Show("Raumname zu lange");
-                     return;
+                    Fach.zaehler--;
+                    return;
                 }
             else
                         {
@@ -324,7 +352,7 @@ namespace Stundenplan_neu
                 //Die Erstellte Faecherliste mit der Combobox abgleichen 
                 Comboboxarray[x].DataSource= Fach.Faecherlist.ToList();
             }
-           
+            CmbBxDel.DataSource = Fach.Faecherlist.ToList();
         }
 
         private void BtnAktualisieren_Click(object sender, EventArgs e)
@@ -399,6 +427,7 @@ namespace Stundenplan_neu
                         data.Schreiben();
                         q++;
                     }
+                    data.Schreiben();
                     if(x==6)
                     {
                         data.Schreiben();
@@ -460,6 +489,24 @@ namespace Stundenplan_neu
         private void txbRaum_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CmbBxDel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndelcmb_Click(object sender, EventArgs e)
+        {
+            string b;
+            b = CmbBxDel.Text;
+            for (int i = 0; i < 7; i++)
+            {
+                if(b == Fach.Array[i,1])
+                {
+
+                }
+            }
         }
     } 
 }
