@@ -105,7 +105,7 @@ namespace Stundenplan_neu
             try
             {
 
-                if (AArray[0, 4] == null)
+                if (AArray[0, 4] == null && Fach.Array[0, 1] != null)
                 {
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
@@ -131,8 +131,9 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt1", Fach.Array[0, 4]);
                     cmd.ExecuteNonQuery();
                 }
-                if (AArray[1, 4] == null)
+                if (AArray[1, 4] == null && Fach.Array[1, 1] != null)
                 {
+                    MessageBox.Show(Fach.Array[1, 1]);
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
                     sql += "VALUES(@name2, @lehrer2, @raum2, @kontakt2, @fa_id2)";
@@ -157,7 +158,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt2", Fach.Array[1, 4]);
                     cmd.ExecuteNonQuery();
                 } 
-                if (AArray[2, 4] == null)
+                if (AArray[2, 4] == null && Fach.Array[2, 1] != null)
                 {
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
@@ -183,7 +184,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt3", Fach.Array[2, 4]);
                     cmd.ExecuteNonQuery();
                 }
-                if (AArray[3, 4] == null)
+                if (AArray[3, 4] == null && Fach.Array[3, 1] != null)
                 {
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
@@ -209,7 +210,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt4", Fach.Array[3, 4]);
                     cmd.ExecuteNonQuery();
                 }
-                if (AArray[4, 4] == null)
+                if (AArray[4, 4] == null && Fach.Array[4, 1] != null)
                 { 
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
@@ -235,7 +236,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt5", Fach.Array[4, 4]);
                     cmd.ExecuteNonQuery();
                 }
-                if (AArray[5, 4] == null)
+                if (AArray[5, 4] == null && Fach.Array[5, 1] != null)
                 {
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
@@ -261,7 +262,7 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@kontakt6", Fach.Array[5, 4]);
                     cmd.ExecuteNonQuery();
                 }
-                if (AArray[6, 4] == null)
+                if (AArray[6, 4] == null && Fach.Array[6, 1] != null)
                 {
                     String sql;
                     sql = "INSERT INTO fach(name,lehrer,raum,kontakt,fa_id)";
@@ -358,6 +359,26 @@ namespace Stundenplan_neu
             sql = "DELETE FROM `fach` ";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
+        }
+
+        public void LoeschenE(int t)
+        {
+            try
+            {
+                t++;
+                MessageBox.Show(t.ToString());
+                String sql;
+                sql = "DELETE FROM `fach` where fa_id=@del ";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@del", t);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
+            return;
         }
     }
 }

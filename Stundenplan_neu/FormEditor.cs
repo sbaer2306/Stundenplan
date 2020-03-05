@@ -219,87 +219,6 @@ namespace Stundenplan_neu
             form1.BtnFr7.Text = CmbBxFr7.Text;
             form1.BtnFr8.Text = CmbBxFr8.Text;
             form1.BtnFr9.Text = CmbBxFr9.Text;
-
-            /* Buttons speichern
-            Properties.Settings.Default.Mo1 = form1.BtnMo1.Text;
-            Properties.Settings.Default.Mo2 = form1.BtnMo2.Text;
-            Properties.Settings.Default.Mo3 = form1.BtnMo3.Text;
-            Properties.Settings.Default.Mo4 = form1.BtnMo4.Text;
-            Properties.Settings.Default.Mo5 = form1.BtnMo5.Text;
-            Properties.Settings.Default.Mo6 = form1.BtnMo6.Text;
-            Properties.Settings.Default.Mo7 = form1.BtnMo7.Text;
-            Properties.Settings.Default.Mo8 = form1.BtnMo8.Text;
-            Properties.Settings.Default.Mo9 = form1.BtnMo9.Text;
-
-            Properties.Settings.Default.Di1 = form1.BtnDi1.Text;
-            Properties.Settings.Default.Di2 = form1.BtnDi2.Text;
-            Properties.Settings.Default.Di3 = form1.BtnDi3.Text;
-            Properties.Settings.Default.Di4 = form1.BtnDi4.Text;
-            Properties.Settings.Default.Di5 = form1.BtnDi5.Text;
-            Properties.Settings.Default.Di6 = form1.BtnDi6.Text;
-            Properties.Settings.Default.Di7 = form1.BtnDi7.Text;
-            Properties.Settings.Default.Di8 = form1.BtnDi8.Text;
-            Properties.Settings.Default.Di9 = form1.BtnDi9.Text;
-
-            Properties.Settings.Default.Mi1 = form1.BtnMi1.Text;
-            Properties.Settings.Default.Mi2 = form1.BtnMi2.Text;
-            Properties.Settings.Default.Mi3 = form1.BtnMi3.Text;
-            Properties.Settings.Default.Mi4 = form1.BtnMi4.Text;
-            Properties.Settings.Default.Mi5 = form1.BtnMi5.Text;
-            Properties.Settings.Default.Mi6 = form1.BtnMi6.Text;
-            Properties.Settings.Default.Mi7 = form1.BtnMi7.Text;
-            Properties.Settings.Default.Mi8 = form1.BtnMi8.Text;
-            Properties.Settings.Default.Mi9 = form1.BtnMi9.Text;
-
-            Properties.Settings.Default.Do1 = form1.BtnDo1.Text;
-            Properties.Settings.Default.Do2 = form1.BtnDo2.Text;
-            Properties.Settings.Default.Do3 = form1.BtnDo3.Text;
-            Properties.Settings.Default.Do4 = form1.BtnDo4.Text;
-            Properties.Settings.Default.Do5 = form1.BtnDo5.Text;
-            Properties.Settings.Default.Do6 = form1.BtnDo6.Text;
-            Properties.Settings.Default.Do7 = form1.BtnDo7.Text;
-            Properties.Settings.Default.Do8 = form1.BtnDo8.Text;
-            Properties.Settings.Default.Do9 = form1.BtnDo9.Text;
-
-            Properties.Settings.Default.Fr1 = form1.BtnFr1.Text;
-            Properties.Settings.Default.Fr2 = form1.BtnFr2.Text;
-            Properties.Settings.Default.Fr3 = form1.BtnFr3.Text;
-            Properties.Settings.Default.Fr4 = form1.BtnFr4.Text;
-            Properties.Settings.Default.Fr5 = form1.BtnFr5.Text;
-            Properties.Settings.Default.Fr6 = form1.BtnFr6.Text;
-            Properties.Settings.Default.Fr7 = form1.BtnFr7.Text;
-            Properties.Settings.Default.Fr8 = form1.BtnFr8.Text;
-            Properties.Settings.Default.Fr9 = form1.BtnFr9.Text;
-
-            // Arrays speichern
-            Properties.Settings.Default.Array01 = Fach.Array[0, 1];
-            Properties.Settings.Default.Array02 = Fach.Array[0, 2];
-            Properties.Settings.Default.Array03 = Fach.Array[0, 3];
-
-            Properties.Settings.Default.Array11 = Fach.Array[1, 1];
-            Properties.Settings.Default.Array12 = Fach.Array[1, 2];
-            Properties.Settings.Default.Array13 = Fach.Array[1, 3];
-
-            Properties.Settings.Default.Array21 = Fach.Array[2, 1];
-            Properties.Settings.Default.Array22 = Fach.Array[2, 2];
-            Properties.Settings.Default.Array23 = Fach.Array[2, 3];
-
-            Properties.Settings.Default.Array31 = Fach.Array[3, 1];
-            Properties.Settings.Default.Array32 = Fach.Array[3, 2];
-            Properties.Settings.Default.Array33 = Fach.Array[3, 3];
-
-            Properties.Settings.Default.Array41 = Fach.Array[4, 1];
-            Properties.Settings.Default.Array42 = Fach.Array[4, 2];
-            Properties.Settings.Default.Array43 = Fach.Array[4, 3];
-
-            Properties.Settings.Default.Array51 = Fach.Array[5, 1];
-            Properties.Settings.Default.Array52 = Fach.Array[5, 2];
-            Properties.Settings.Default.Array53 = Fach.Array[5, 3];
-
-            Properties.Settings.Default.Array61 = Fach.Array[6, 1];
-            Properties.Settings.Default.Array62 = Fach.Array[6, 2];
-            Properties.Settings.Default.Array63 = Fach.Array[6, 3];
-            Properties.Settings.Default.Save();*/
         }
         private void BtnClear_Click(object sender, EventArgs e)
         {
@@ -504,7 +423,12 @@ namespace Stundenplan_neu
             {
                 if(b == Fach.Array[i,1])
                 {
-
+                    data.LoeschenE(i);
+                    data.Lesen();
+                    refreshFaecher();
+                    Listeneuerstellen();
+                    refreshList();
+                    return;
                 }
             }
         }
