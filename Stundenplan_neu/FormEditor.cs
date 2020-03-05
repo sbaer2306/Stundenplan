@@ -37,14 +37,25 @@ namespace Stundenplan_neu
             {
                 if (string.IsNullOrEmpty(Fach.Array[a, 1]))
                 {
-                    Fach.zaehler++;
-                    return;
+                    Fach.zaehler = a;
+                    a = 7;
+                }
+                else
+                {
+                    Fach.zaehler = 7;
                 }
 
             }
             int k = Fach.zaehler + 1;
-            MessageBox.Show(k.ToString());
-            LblFach.Text = "Fach " + k + " von 7";
+            //MessageBox.Show(k.ToString());
+            if (k == 8)
+            {
+                LblFach.Text = "Faecher voll";
+            }
+            else
+            {
+                LblFach.Text = "Fach " + k + " von 7";
+            }
             //leeren Eintrag fuer Liste erstellen
 
 
@@ -77,55 +88,55 @@ namespace Stundenplan_neu
                 if (name == "")
                 {
                     MessageBox.Show("Feld Name ist leer");
-                    Fach.zaehler--;
+                    
                     return;
                 }
                 else if (txbFachname.Text.Length > 12)
                 {
                     MessageBox.Show("Fachname zu lange");
-                    Fach.zaehler--;
+                    
                     return;
                 }
                 else if (System.Text.RegularExpressions.Regex.IsMatch(txbFachname.Text, "[ ^ 0-9]"))
                 {
                     MessageBox.Show("Bitte keinen Nummerischen Fachnnamen eintragen");
-                    Fach.zaehler--;
+                    
                     return;
                 }
                 else if (lehrer == "")
                 {
                     MessageBox.Show("Feld Lehrer ist leer");
-                    Fach.zaehler--;
+                   
                     return;
                 }
                 else if (txbLehrer.Text.Length > 14)
                 {
                     MessageBox.Show("Lehrername zu lange");
-                    Fach.zaehler--;
+                    
                     return;
                 }
                 else if (System.Text.RegularExpressions.Regex.IsMatch(txbLehrer.Text, "[ ^ 0-9]"))
                 {
                     MessageBox.Show("Bitte keinen Nummerischen Lehrernamen eintragen");
-                    Fach.zaehler--;
+                    
                     return;
                 }
                 else if (raum == "")
                 {
                     MessageBox.Show("Feld Raum ist leer");
-                    Fach.zaehler--;
+                    
                     return; 
                 }
                 else if (x != 1)
                 {
                     MessageBox.Show("Bitte Nummmerischen Wert eintragen");
-                    Fach.zaehler--;
+                   
                     return;
                 }
                 else if (txbFachname.Text.Length > 8)
                 {
                     MessageBox.Show("Raumname zu lange");
-                    Fach.zaehler--;
+                    
                     return;
                 }
             else

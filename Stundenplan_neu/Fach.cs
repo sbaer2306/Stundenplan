@@ -10,7 +10,7 @@ namespace Stundenplan_neu
     {
         
         // Array in das die Informationen abgespeichert werden
-        public static string[,] Array = new string[14,7];
+        public static string[,] Array = new string[15,7];
         // Zaehler fuer Position im Array
         public static int zaehler = 0;
         // Liste auf die die Comboboxen zugreifen

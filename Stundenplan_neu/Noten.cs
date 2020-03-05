@@ -146,24 +146,37 @@ namespace Stundenplan_neu
             tbF7E3.Text = Fach.Array[13, 5];
             tbF7E4.Text = Fach.Array[13, 6];
 
-
+            lblF1.Text = Fach.Array[14, 0];
+            lblF2.Text = Fach.Array[14, 1];
+            lblF3.Text = Fach.Array[14, 2];
+            lblF4.Text = Fach.Array[14, 3];
+            lblF5.Text = Fach.Array[14, 4];
+            lblF6.Text = Fach.Array[14, 5];
+            lblF7.Text = Fach.Array[14, 6];
         }
 
         private void btnberechnen_Click(object sender, EventArgs e)
         {
-
             int Summe, Wert, i;
             double SummeS;
             string Ergebnis;
             i = 0;
 
             // Fach 1 Berechnung
-            Wert = int.Parse(tbF1S1.Text);      // Convertieren
+            if(String.IsNullOrEmpty(tbF1S1.Text))
+            {
+            Summe = 0;
+            }
+            else
+            { 
+            Wert = int.Parse(tbF1S1.Text);  // Convertieren
             if (Wert != 0)
             {
                 i = i + 2;              // Notenzähler
             }
             Summe = Wert;
+            }
+
             Wert = int.Parse(tbF1S2.Text);
             if (Wert != 0)
             {
@@ -204,14 +217,13 @@ namespace Stundenplan_neu
             }
             Summe = Summe + Wert;
 
-            if (Summe != 0)
-            {
+
                 SummeS = SummeS + Summe;
                 SummeS = SummeS / i;                // durch Anzahl von Noten
                 SummeS = Math.Round(SummeS, 2);     // nur 2 Dezimalstellen
                 Ergebnis = SummeS.ToString();       // Convertieren zu String
                 lblF1.Text = Ergebnis;              // Ergebnis anzeigen
-            }
+
 
             // Fach 2 Berechnung
             i = 0;
@@ -259,15 +271,14 @@ namespace Stundenplan_neu
             {
                 i = i + 1;
             }
-            if (Summe != 0)
-            {
+           
                 Summe = Summe + Wert;
                 SummeS = SummeS + Summe;
                 SummeS = SummeS / i;
                 SummeS = Math.Round(SummeS, 2);
                 Ergebnis = SummeS.ToString();
                 lblF2.Text = Ergebnis;
-            }
+
             // Fach 3 Berechnung
             i = 0;
             Wert = int.Parse(tbF3S1.Text);
@@ -550,7 +561,13 @@ namespace Stundenplan_neu
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-
+            Fach.Array[14, 0] = lblF1.Text;
+            Fach.Array[14, 1] = lblF2.Text;
+            Fach.Array[14, 2] = lblF3.Text;
+            Fach.Array[14, 3] = lblF4.Text;
+            Fach.Array[14, 4] = lblF5.Text;
+            Fach.Array[14, 5] = lblF6.Text;
+            Fach.Array[14, 6] = lblF7.Text;
             // Schulaufgaben Speichern
             // In Array speichern
             Fach.Array[7, 0] = tbF1S1.Text;
@@ -1168,6 +1185,7 @@ namespace Stundenplan_neu
         {
 
         }
+
     }
 }
 

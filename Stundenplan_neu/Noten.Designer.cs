@@ -103,7 +103,7 @@
             // 
             this.btnende.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnende.Location = new System.Drawing.Point(14, 264);
-            this.btnende.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnende.Margin = new System.Windows.Forms.Padding(2);
             this.btnende.Name = "btnende";
             this.btnende.Size = new System.Drawing.Size(84, 43);
             this.btnende.TabIndex = 152;
@@ -192,7 +192,7 @@
             // 
             this.btnberechnen.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnberechnen.Location = new System.Drawing.Point(440, 264);
-            this.btnberechnen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnberechnen.Margin = new System.Windows.Forms.Padding(2);
             this.btnberechnen.Name = "btnberechnen";
             this.btnberechnen.Size = new System.Drawing.Size(128, 45);
             this.btnberechnen.TabIndex = 144;
@@ -240,7 +240,7 @@
             // 
             this.tbF7E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7E4.Location = new System.Drawing.Point(476, 228);
-            this.tbF7E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7E4.Name = "tbF7E4";
             this.tbF7E4.Size = new System.Drawing.Size(38, 23);
             this.tbF7E4.TabIndex = 140;
@@ -250,7 +250,7 @@
             // 
             this.tbF6E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6E4.Location = new System.Drawing.Point(476, 196);
-            this.tbF6E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6E4.Name = "tbF6E4";
             this.tbF6E4.Size = new System.Drawing.Size(38, 23);
             this.tbF6E4.TabIndex = 139;
@@ -260,7 +260,7 @@
             // 
             this.tbF5E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5E4.Location = new System.Drawing.Point(476, 163);
-            this.tbF5E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5E4.Name = "tbF5E4";
             this.tbF5E4.Size = new System.Drawing.Size(38, 23);
             this.tbF5E4.TabIndex = 138;
@@ -270,7 +270,7 @@
             // 
             this.tbF4E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4E4.Location = new System.Drawing.Point(476, 132);
-            this.tbF4E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4E4.Name = "tbF4E4";
             this.tbF4E4.Size = new System.Drawing.Size(38, 23);
             this.tbF4E4.TabIndex = 137;
@@ -280,7 +280,7 @@
             // 
             this.tbF3E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3E4.Location = new System.Drawing.Point(476, 101);
-            this.tbF3E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3E4.Name = "tbF3E4";
             this.tbF3E4.Size = new System.Drawing.Size(38, 23);
             this.tbF3E4.TabIndex = 136;
@@ -290,7 +290,7 @@
             // 
             this.tbF2E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2E4.Location = new System.Drawing.Point(476, 71);
-            this.tbF2E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2E4.Name = "tbF2E4";
             this.tbF2E4.Size = new System.Drawing.Size(38, 23);
             this.tbF2E4.TabIndex = 135;
@@ -300,7 +300,7 @@
             // 
             this.tbF1E4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1E4.Location = new System.Drawing.Point(476, 39);
-            this.tbF1E4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1E4.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1E4.Name = "tbF1E4";
             this.tbF1E4.Size = new System.Drawing.Size(38, 23);
             this.tbF1E4.TabIndex = 134;
@@ -310,7 +310,7 @@
             // 
             this.tbF7E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7E3.Location = new System.Drawing.Point(434, 228);
-            this.tbF7E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7E3.Name = "tbF7E3";
             this.tbF7E3.Size = new System.Drawing.Size(38, 23);
             this.tbF7E3.TabIndex = 133;
@@ -320,7 +320,7 @@
             // 
             this.tbF6E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6E3.Location = new System.Drawing.Point(434, 196);
-            this.tbF6E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6E3.Name = "tbF6E3";
             this.tbF6E3.Size = new System.Drawing.Size(38, 23);
             this.tbF6E3.TabIndex = 132;
@@ -330,7 +330,7 @@
             // 
             this.tbF5E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5E3.Location = new System.Drawing.Point(434, 163);
-            this.tbF5E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5E3.Name = "tbF5E3";
             this.tbF5E3.Size = new System.Drawing.Size(38, 23);
             this.tbF5E3.TabIndex = 131;
@@ -340,7 +340,7 @@
             // 
             this.tbF4E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4E3.Location = new System.Drawing.Point(434, 132);
-            this.tbF4E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4E3.Name = "tbF4E3";
             this.tbF4E3.Size = new System.Drawing.Size(38, 23);
             this.tbF4E3.TabIndex = 130;
@@ -350,7 +350,7 @@
             // 
             this.tbF3E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3E3.Location = new System.Drawing.Point(434, 101);
-            this.tbF3E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3E3.Name = "tbF3E3";
             this.tbF3E3.Size = new System.Drawing.Size(38, 23);
             this.tbF3E3.TabIndex = 129;
@@ -360,7 +360,7 @@
             // 
             this.tbF2E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2E3.Location = new System.Drawing.Point(434, 71);
-            this.tbF2E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2E3.Name = "tbF2E3";
             this.tbF2E3.Size = new System.Drawing.Size(38, 23);
             this.tbF2E3.TabIndex = 128;
@@ -370,7 +370,7 @@
             // 
             this.tbF1E3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1E3.Location = new System.Drawing.Point(434, 39);
-            this.tbF1E3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1E3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1E3.Name = "tbF1E3";
             this.tbF1E3.Size = new System.Drawing.Size(38, 23);
             this.tbF1E3.TabIndex = 127;
@@ -380,7 +380,7 @@
             // 
             this.tbF7E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7E2.Location = new System.Drawing.Point(392, 228);
-            this.tbF7E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7E2.Name = "tbF7E2";
             this.tbF7E2.Size = new System.Drawing.Size(38, 23);
             this.tbF7E2.TabIndex = 126;
@@ -390,7 +390,7 @@
             // 
             this.tbF6E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6E2.Location = new System.Drawing.Point(392, 196);
-            this.tbF6E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6E2.Name = "tbF6E2";
             this.tbF6E2.Size = new System.Drawing.Size(38, 23);
             this.tbF6E2.TabIndex = 125;
@@ -400,7 +400,7 @@
             // 
             this.tbF5E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5E2.Location = new System.Drawing.Point(392, 163);
-            this.tbF5E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5E2.Name = "tbF5E2";
             this.tbF5E2.Size = new System.Drawing.Size(38, 23);
             this.tbF5E2.TabIndex = 124;
@@ -410,7 +410,7 @@
             // 
             this.tbF4E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4E2.Location = new System.Drawing.Point(392, 132);
-            this.tbF4E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4E2.Name = "tbF4E2";
             this.tbF4E2.Size = new System.Drawing.Size(38, 23);
             this.tbF4E2.TabIndex = 123;
@@ -420,7 +420,7 @@
             // 
             this.tbF3E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3E2.Location = new System.Drawing.Point(392, 101);
-            this.tbF3E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3E2.Name = "tbF3E2";
             this.tbF3E2.Size = new System.Drawing.Size(38, 23);
             this.tbF3E2.TabIndex = 122;
@@ -430,7 +430,7 @@
             // 
             this.tbF2E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2E2.Location = new System.Drawing.Point(392, 71);
-            this.tbF2E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2E2.Name = "tbF2E2";
             this.tbF2E2.Size = new System.Drawing.Size(38, 23);
             this.tbF2E2.TabIndex = 121;
@@ -440,7 +440,7 @@
             // 
             this.tbF1E2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1E2.Location = new System.Drawing.Point(392, 39);
-            this.tbF1E2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1E2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1E2.Name = "tbF1E2";
             this.tbF1E2.Size = new System.Drawing.Size(38, 23);
             this.tbF1E2.TabIndex = 120;
@@ -450,7 +450,7 @@
             // 
             this.tbF7E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7E1.Location = new System.Drawing.Point(350, 228);
-            this.tbF7E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7E1.Name = "tbF7E1";
             this.tbF7E1.Size = new System.Drawing.Size(38, 23);
             this.tbF7E1.TabIndex = 119;
@@ -460,7 +460,7 @@
             // 
             this.tbF6E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6E1.Location = new System.Drawing.Point(350, 196);
-            this.tbF6E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6E1.Name = "tbF6E1";
             this.tbF6E1.Size = new System.Drawing.Size(38, 23);
             this.tbF6E1.TabIndex = 118;
@@ -470,7 +470,7 @@
             // 
             this.tbF5E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5E1.Location = new System.Drawing.Point(350, 163);
-            this.tbF5E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5E1.Name = "tbF5E1";
             this.tbF5E1.Size = new System.Drawing.Size(38, 23);
             this.tbF5E1.TabIndex = 117;
@@ -480,7 +480,7 @@
             // 
             this.tbF4E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4E1.Location = new System.Drawing.Point(350, 132);
-            this.tbF4E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4E1.Name = "tbF4E1";
             this.tbF4E1.Size = new System.Drawing.Size(38, 23);
             this.tbF4E1.TabIndex = 116;
@@ -490,7 +490,7 @@
             // 
             this.tbF3E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3E1.Location = new System.Drawing.Point(350, 101);
-            this.tbF3E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3E1.Name = "tbF3E1";
             this.tbF3E1.Size = new System.Drawing.Size(38, 23);
             this.tbF3E1.TabIndex = 115;
@@ -500,7 +500,7 @@
             // 
             this.tbF2E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2E1.Location = new System.Drawing.Point(350, 71);
-            this.tbF2E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2E1.Name = "tbF2E1";
             this.tbF2E1.Size = new System.Drawing.Size(38, 23);
             this.tbF2E1.TabIndex = 114;
@@ -510,7 +510,7 @@
             // 
             this.tbF1E1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1E1.Location = new System.Drawing.Point(350, 39);
-            this.tbF1E1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1E1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1E1.Name = "tbF1E1";
             this.tbF1E1.Size = new System.Drawing.Size(38, 23);
             this.tbF1E1.TabIndex = 113;
@@ -520,7 +520,7 @@
             // 
             this.tbF7S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7S3.Location = new System.Drawing.Point(277, 228);
-            this.tbF7S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7S3.Name = "tbF7S3";
             this.tbF7S3.Size = new System.Drawing.Size(38, 23);
             this.tbF7S3.TabIndex = 112;
@@ -530,7 +530,7 @@
             // 
             this.tbF6S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6S3.Location = new System.Drawing.Point(277, 196);
-            this.tbF6S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6S3.Name = "tbF6S3";
             this.tbF6S3.Size = new System.Drawing.Size(38, 23);
             this.tbF6S3.TabIndex = 111;
@@ -540,7 +540,7 @@
             // 
             this.tbF5S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5S3.Location = new System.Drawing.Point(277, 163);
-            this.tbF5S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5S3.Name = "tbF5S3";
             this.tbF5S3.Size = new System.Drawing.Size(38, 23);
             this.tbF5S3.TabIndex = 110;
@@ -550,7 +550,7 @@
             // 
             this.tbF4S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4S3.Location = new System.Drawing.Point(277, 132);
-            this.tbF4S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4S3.Name = "tbF4S3";
             this.tbF4S3.Size = new System.Drawing.Size(38, 23);
             this.tbF4S3.TabIndex = 109;
@@ -560,7 +560,7 @@
             // 
             this.tbF3S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3S3.Location = new System.Drawing.Point(277, 101);
-            this.tbF3S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3S3.Name = "tbF3S3";
             this.tbF3S3.Size = new System.Drawing.Size(38, 23);
             this.tbF3S3.TabIndex = 108;
@@ -570,7 +570,7 @@
             // 
             this.tbF2S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2S3.Location = new System.Drawing.Point(277, 71);
-            this.tbF2S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2S3.Name = "tbF2S3";
             this.tbF2S3.Size = new System.Drawing.Size(38, 23);
             this.tbF2S3.TabIndex = 107;
@@ -580,7 +580,7 @@
             // 
             this.tbF1S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1S3.Location = new System.Drawing.Point(277, 39);
-            this.tbF1S3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1S3.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1S3.Name = "tbF1S3";
             this.tbF1S3.Size = new System.Drawing.Size(38, 23);
             this.tbF1S3.TabIndex = 106;
@@ -590,7 +590,7 @@
             // 
             this.tbF7S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7S2.Location = new System.Drawing.Point(235, 228);
-            this.tbF7S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7S2.Name = "tbF7S2";
             this.tbF7S2.Size = new System.Drawing.Size(38, 23);
             this.tbF7S2.TabIndex = 105;
@@ -600,7 +600,7 @@
             // 
             this.tbF6S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6S2.Location = new System.Drawing.Point(235, 196);
-            this.tbF6S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6S2.Name = "tbF6S2";
             this.tbF6S2.Size = new System.Drawing.Size(38, 23);
             this.tbF6S2.TabIndex = 104;
@@ -610,7 +610,7 @@
             // 
             this.tbF5S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5S2.Location = new System.Drawing.Point(235, 163);
-            this.tbF5S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5S2.Name = "tbF5S2";
             this.tbF5S2.Size = new System.Drawing.Size(38, 23);
             this.tbF5S2.TabIndex = 103;
@@ -620,7 +620,7 @@
             // 
             this.tbF4S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4S2.Location = new System.Drawing.Point(235, 132);
-            this.tbF4S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4S2.Name = "tbF4S2";
             this.tbF4S2.Size = new System.Drawing.Size(38, 23);
             this.tbF4S2.TabIndex = 102;
@@ -630,7 +630,7 @@
             // 
             this.tbF3S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3S2.Location = new System.Drawing.Point(235, 101);
-            this.tbF3S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3S2.Name = "tbF3S2";
             this.tbF3S2.Size = new System.Drawing.Size(38, 23);
             this.tbF3S2.TabIndex = 101;
@@ -640,7 +640,7 @@
             // 
             this.tbF2S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2S2.Location = new System.Drawing.Point(235, 71);
-            this.tbF2S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2S2.Name = "tbF2S2";
             this.tbF2S2.Size = new System.Drawing.Size(38, 23);
             this.tbF2S2.TabIndex = 100;
@@ -650,7 +650,7 @@
             // 
             this.tbF1S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1S2.Location = new System.Drawing.Point(235, 39);
-            this.tbF1S2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1S2.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1S2.Name = "tbF1S2";
             this.tbF1S2.Size = new System.Drawing.Size(38, 23);
             this.tbF1S2.TabIndex = 99;
@@ -660,7 +660,7 @@
             // 
             this.tbF7S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF7S1.Location = new System.Drawing.Point(193, 228);
-            this.tbF7S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF7S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF7S1.Name = "tbF7S1";
             this.tbF7S1.Size = new System.Drawing.Size(38, 23);
             this.tbF7S1.TabIndex = 98;
@@ -670,7 +670,7 @@
             // 
             this.tbF6S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF6S1.Location = new System.Drawing.Point(193, 196);
-            this.tbF6S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF6S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF6S1.Name = "tbF6S1";
             this.tbF6S1.Size = new System.Drawing.Size(38, 23);
             this.tbF6S1.TabIndex = 97;
@@ -680,7 +680,7 @@
             // 
             this.tbF5S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF5S1.Location = new System.Drawing.Point(193, 163);
-            this.tbF5S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF5S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF5S1.Name = "tbF5S1";
             this.tbF5S1.Size = new System.Drawing.Size(38, 23);
             this.tbF5S1.TabIndex = 96;
@@ -690,7 +690,7 @@
             // 
             this.tbF4S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF4S1.Location = new System.Drawing.Point(193, 132);
-            this.tbF4S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF4S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF4S1.Name = "tbF4S1";
             this.tbF4S1.Size = new System.Drawing.Size(38, 23);
             this.tbF4S1.TabIndex = 95;
@@ -700,7 +700,7 @@
             // 
             this.tbF3S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF3S1.Location = new System.Drawing.Point(193, 101);
-            this.tbF3S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF3S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF3S1.Name = "tbF3S1";
             this.tbF3S1.Size = new System.Drawing.Size(38, 23);
             this.tbF3S1.TabIndex = 94;
@@ -710,7 +710,7 @@
             // 
             this.tbF2S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF2S1.Location = new System.Drawing.Point(193, 71);
-            this.tbF2S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF2S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF2S1.Name = "tbF2S1";
             this.tbF2S1.Size = new System.Drawing.Size(38, 23);
             this.tbF2S1.TabIndex = 93;
@@ -720,7 +720,7 @@
             // 
             this.tbF1S1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbF1S1.Location = new System.Drawing.Point(193, 39);
-            this.tbF1S1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbF1S1.Margin = new System.Windows.Forms.Padding(2);
             this.tbF1S1.Name = "tbF1S1";
             this.tbF1S1.Size = new System.Drawing.Size(38, 23);
             this.tbF1S1.TabIndex = 92;
@@ -732,7 +732,7 @@
             // 
             this.buttonSpeichern.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSpeichern.Location = new System.Drawing.Point(224, 264);
-            this.buttonSpeichern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSpeichern.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpeichern.Name = "buttonSpeichern";
             this.buttonSpeichern.Size = new System.Drawing.Size(164, 45);
             this.buttonSpeichern.TabIndex = 85;
@@ -891,7 +891,7 @@
             this.Controls.Add(this.tbF2S1);
             this.Controls.Add(this.tbF1S1);
             this.Controls.Add(this.buttonSpeichern);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Noten";
             this.Text = "Noten";
             this.Load += new System.EventHandler(this.Noten_Load);
