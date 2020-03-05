@@ -38,6 +38,22 @@ namespace Stundenplan_neu
         {
             conn.Close();
         }
+
+        public void NotizenSchreiben()
+        {
+            String sql;
+            sql = "INSERT INTO notizen(name,lehrer,raum,kontakt,fa_id)";
+            sql += "VALUES(@name1, @lehrer1, @raum1, @kontakt1, @fa_id1)";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@name1", Fach.Array[0, 1]);
+            cmd.Parameters.AddWithValue("@lehrer1", Fach.Array[0, 2]);
+            cmd.Parameters.AddWithValue("@raum1", Fach.Array[0, 3]);
+            cmd.Parameters.AddWithValue("@kontakt1", Fach.Array[0, 4]);
+            cmd.Parameters.AddWithValue("@fa_id1", 1);
+            cmd.ExecuteNonQuery();
+        }
+
         public void Schreiben()
         {
             //Database dm = new Database();

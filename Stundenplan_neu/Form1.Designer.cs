@@ -544,7 +544,7 @@
             this.BtnDo1.Size = new System.Drawing.Size(85, 45);
             this.BtnDo1.TabIndex = 86;
             this.BtnDo1.UseVisualStyleBackColor = true;
-            this.BtnDo1.Click += new System.EventHandler(this.BtnDo1_Click_1);
+            this.BtnDo1.Click += new System.EventHandler(this.BtnDo1_Click);
             // 
             // BtnDo2
             // 
@@ -553,7 +553,7 @@
             this.BtnDo2.Size = new System.Drawing.Size(85, 45);
             this.BtnDo2.TabIndex = 86;
             this.BtnDo2.UseVisualStyleBackColor = true;
-            this.BtnDo2.Click += new System.EventHandler(this.BtnDo2_Click_1);
+            this.BtnDo2.Click += new System.EventHandler(this.BtnDo2_Click);
             // 
             // BtnDo3
             // 
