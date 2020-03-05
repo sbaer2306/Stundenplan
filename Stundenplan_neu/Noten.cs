@@ -17,9 +17,8 @@ namespace Stundenplan_neu
         public Noten()
         {
             InitializeComponent();
+            data.Lesen();
         }
-
-        //penise
 
         private void Noten_Load(object sender, EventArgs e)
         {
@@ -205,12 +204,14 @@ namespace Stundenplan_neu
             }
             Summe = Summe + Wert;
 
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;                // durch Anzahl von Noten
-            SummeS = Math.Round(SummeS, 2);     // nur 2 Dezimalstellen
-            Ergebnis = SummeS.ToString();       // Convertieren zu String
-            lblF1.Text = Ergebnis;              // Ergebnis anzeigen
-            
+            if (Summe != 0)
+            {
+                SummeS = SummeS + Summe;
+                SummeS = SummeS / i;                // durch Anzahl von Noten
+                SummeS = Math.Round(SummeS, 2);     // nur 2 Dezimalstellen
+                Ergebnis = SummeS.ToString();       // Convertieren zu String
+                lblF1.Text = Ergebnis;              // Ergebnis anzeigen
+            }
 
             // Fach 2 Berechnung
             i = 0;
@@ -258,13 +259,15 @@ namespace Stundenplan_neu
             {
                 i = i + 1;
             }
-            Summe = Summe + Wert;
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;
-            SummeS = Math.Round(SummeS, 2);
-            Ergebnis = SummeS.ToString();
-            lblF2.Text = Ergebnis;
-
+            if (Summe != 0)
+            {
+                Summe = Summe + Wert;
+                SummeS = SummeS + Summe;
+                SummeS = SummeS / i;
+                SummeS = Math.Round(SummeS, 2);
+                Ergebnis = SummeS.ToString();
+                lblF2.Text = Ergebnis;
+            }
             // Fach 3 Berechnung
             i = 0;
             Wert = int.Parse(tbF3S1.Text);
@@ -314,11 +317,14 @@ namespace Stundenplan_neu
             }
             Summe = Summe + Wert;
 
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;
-            SummeS = Math.Round(SummeS, 2);
-            Ergebnis = SummeS.ToString();
-            lblF3.Text = Ergebnis;
+            if (Summe != 0)
+            {
+                SummeS = SummeS + Summe;
+                SummeS = SummeS / i;
+                SummeS = Math.Round(SummeS, 2);
+                Ergebnis = SummeS.ToString();
+                lblF3.Text = Ergebnis;
+            }
 
             // Fach 4 Berechnung
             i = 0;
@@ -368,12 +374,14 @@ namespace Stundenplan_neu
                 i = i + 1;
             }
             Summe = Summe + Wert;
-
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;
-            SummeS = Math.Round(SummeS, 2);
-            Ergebnis = SummeS.ToString();
-            lblF4.Text = Ergebnis;
+            if (Summe != 0)
+            {
+                SummeS = SummeS + Summe;
+                SummeS = SummeS / i;
+                SummeS = Math.Round(SummeS, 2);
+                Ergebnis = SummeS.ToString();
+                lblF4.Text = Ergebnis;
+            }
 
             // Fach 5
             i = 0;

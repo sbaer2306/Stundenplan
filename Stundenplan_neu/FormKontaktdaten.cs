@@ -34,6 +34,13 @@ namespace Stundenplan_neu
             LblLehrer6.Text = Fach.Array[5, 2];
             LblLehrer7.Text = Fach.Array[6, 2];
 
+            TxtBxFach1.Text = Fach.Array[0, 4];
+            TxtBxFach2.Text = Fach.Array[1, 4];
+            TxtBxFach3.Text = Fach.Array[2, 4];
+            TxtBxFach4.Text = Fach.Array[0, 4];
+            TxtBxFach5.Text = Fach.Array[0, 4];
+            TxtBxFach6.Text = Fach.Array[0, 4];
+            TxtBxFach7.Text = Fach.Array[0, 4];
             // lbl Kontaktdaten mit den Werten aus dem Array befuellen
             /*Fach.Array[0, 4] = Properties.Settings.Default.Array04;
             Fach.Array[1, 4] = Properties.Settings.Default.Array14;
@@ -43,13 +50,13 @@ namespace Stundenplan_neu
             Fach.Array[5, 4] = Properties.Settings.Default.Array54;
             Fach.Array[6, 4] = Properties.Settings.Default.Array64;*/
 
-            LblKontaktdaten1.Text = Fach.Array[0, 4];
+            /*LblKontaktdaten1.Text = Fach.Array[0, 4];
             LblKontaktdaten2.Text = Fach.Array[1, 4];
             LblKontaktdaten3.Text = Fach.Array[2, 4];
             LblKontaktdaten4.Text = Fach.Array[3, 4];
             LblKontaktdaten5.Text = Fach.Array[4, 4];
             LblKontaktdaten6.Text = Fach.Array[5, 4];
-            LblKontaktdaten7.Text = Fach.Array[6, 4];
+            LblKontaktdaten7.Text = Fach.Array[6, 4];*/
 
             Visibility();
 
@@ -58,7 +65,13 @@ namespace Stundenplan_neu
         private void BtnKontakdateneintragen_Click(object sender, EventArgs e)
         {
             //Mit den Kontaktdaten befuellen
-
+            /*TxtBxFach1.Text = Fach.Array[0, 4];
+            TxtBxFach2.Text = Fach.Array[1, 4];
+            TxtBxFach3.Text = Fach.Array[2, 4];
+            TxtBxFach4.Text = Fach.Array[0, 4];
+            TxtBxFach5.Text = Fach.Array[0, 4];
+            TxtBxFach6.Text = Fach.Array[0, 4];
+            TxtBxFach7.Text = Fach.Array[0, 4];*/
 
             Fach.Array[0, 4] = TxtBxFach1.Text;
             Fach.Array[1, 4] = TxtBxFach2.Text;
@@ -78,25 +91,78 @@ namespace Stundenplan_neu
             Properties.Settings.Default.Array04 = Fach.Array[6, 4];*/
  
             //Label Kontakdaten  mit den Werten aus dem Array befuellen
-            LblKontaktdaten1.Text = Fach.Array[0, 4];
+            /*LblKontaktdaten1.Text = Fach.Array[0, 4];
             LblKontaktdaten2.Text = Fach.Array[1, 4];
             LblKontaktdaten3.Text = Fach.Array[2, 4];
             LblKontaktdaten4.Text = Fach.Array[3, 4];
             LblKontaktdaten5.Text = Fach.Array[4, 4];
             LblKontaktdaten6.Text = Fach.Array[5, 4]; 
-            LblKontaktdaten7.Text = Fach.Array[6, 4];
+            LblKontaktdaten7.Text = Fach.Array[6, 4];*/
 
             data.Schreiben();
             MessageBox.Show("Kontakdaten eingetragen");
             data.Lesen();
+            Visibility();
         }
 
         private void Visibility()
         {
-            if (LblKontaktdaten1.Text == null)
-                LblKontaktdaten1.Visible = false;
+            if (string.IsNullOrEmpty(LblFach1.Text))
+            {
+                TxtBxFach1.Visible = false;
+            }
             else
-                LblKontaktdaten1.Visible = true;
+            {
+                TxtBxFach1.Visible = true;
+            }
+            if (string.IsNullOrEmpty(LblFach2.Text))
+            {
+                TxtBxFach2.Visible = false;
+            }
+            else
+            {
+                TxtBxFach2.Visible = true;
+            }
+            if (string.IsNullOrEmpty(LblFach3.Text))
+            {
+                TxtBxFach3.Visible = false;
+            }
+            else
+            {
+                TxtBxFach3.Visible = true;
+            }
+            if (string.IsNullOrEmpty(LblFach4.Text))
+            {
+                TxtBxFach4.Visible = false;
+            }
+            else
+            {
+                TxtBxFach4.Visible = true;
+            }
+            if (string.IsNullOrEmpty(LblFach5.Text))
+            {
+                TxtBxFach5.Visible = false;
+            }
+            else
+            {
+                TxtBxFach5.Visible = true;
+            }
+            if (string.IsNullOrEmpty(LblFach6.Text))
+            {
+                TxtBxFach6.Visible = false;
+            }
+            else
+            {
+                TxtBxFach6.Visible = true;
+            }
+            if (string.IsNullOrEmpty(LblFach7.Text))
+            {
+                TxtBxFach7.Visible = false;
+            }
+            else
+            {
+                TxtBxFach7.Visible = true;
+            }
         }
         private void BtnBeenden_Click(object sender, EventArgs e)
         {
