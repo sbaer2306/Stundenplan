@@ -727,7 +727,7 @@
             // TxtBxFach1
             // 
             this.TxtBxFach1.Location = new System.Drawing.Point(19, 255);
-            this.TxtBxFach1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach1.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach1.Name = "TxtBxFach1";
             this.TxtBxFach1.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach1.TabIndex = 136;
@@ -735,7 +735,7 @@
             // TxtBxLehrer1
             // 
             this.TxtBxLehrer1.Location = new System.Drawing.Point(98, 255);
-            this.TxtBxLehrer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer1.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer1.Name = "TxtBxLehrer1";
             this.TxtBxLehrer1.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer1.TabIndex = 137;
@@ -743,7 +743,7 @@
             // TxtBxRaum1
             // 
             this.TxtBxRaum1.Location = new System.Drawing.Point(178, 255);
-            this.TxtBxRaum1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum1.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum1.Name = "TxtBxRaum1";
             this.TxtBxRaum1.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum1.TabIndex = 138;
@@ -751,7 +751,7 @@
             // TxtBxRaum2
             // 
             this.TxtBxRaum2.Location = new System.Drawing.Point(178, 278);
-            this.TxtBxRaum2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum2.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum2.Name = "TxtBxRaum2";
             this.TxtBxRaum2.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum2.TabIndex = 141;
@@ -759,7 +759,7 @@
             // TxtBxLehrer2
             // 
             this.TxtBxLehrer2.Location = new System.Drawing.Point(98, 278);
-            this.TxtBxLehrer2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer2.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer2.Name = "TxtBxLehrer2";
             this.TxtBxLehrer2.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer2.TabIndex = 140;
@@ -767,7 +767,7 @@
             // TxtBxFach2
             // 
             this.TxtBxFach2.Location = new System.Drawing.Point(19, 278);
-            this.TxtBxFach2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach2.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach2.Name = "TxtBxFach2";
             this.TxtBxFach2.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach2.TabIndex = 139;
@@ -775,7 +775,7 @@
             // TxtBxRaum3
             // 
             this.TxtBxRaum3.Location = new System.Drawing.Point(178, 301);
-            this.TxtBxRaum3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum3.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum3.Name = "TxtBxRaum3";
             this.TxtBxRaum3.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum3.TabIndex = 144;
@@ -783,7 +783,7 @@
             // TxtBxLehrer3
             // 
             this.TxtBxLehrer3.Location = new System.Drawing.Point(98, 301);
-            this.TxtBxLehrer3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer3.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer3.Name = "TxtBxLehrer3";
             this.TxtBxLehrer3.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer3.TabIndex = 143;
@@ -791,7 +791,7 @@
             // TxtBxFach3
             // 
             this.TxtBxFach3.Location = new System.Drawing.Point(19, 301);
-            this.TxtBxFach3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach3.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach3.Name = "TxtBxFach3";
             this.TxtBxFach3.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach3.TabIndex = 142;
@@ -799,7 +799,7 @@
             // TxtBxRaum4
             // 
             this.TxtBxRaum4.Location = new System.Drawing.Point(178, 323);
-            this.TxtBxRaum4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum4.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum4.Name = "TxtBxRaum4";
             this.TxtBxRaum4.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum4.TabIndex = 147;
@@ -807,7 +807,7 @@
             // TxtBxLehrer4
             // 
             this.TxtBxLehrer4.Location = new System.Drawing.Point(98, 323);
-            this.TxtBxLehrer4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer4.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer4.Name = "TxtBxLehrer4";
             this.TxtBxLehrer4.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer4.TabIndex = 146;
@@ -815,7 +815,7 @@
             // TxtBxFach4
             // 
             this.TxtBxFach4.Location = new System.Drawing.Point(19, 323);
-            this.TxtBxFach4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach4.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach4.Name = "TxtBxFach4";
             this.TxtBxFach4.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach4.TabIndex = 145;
@@ -823,7 +823,7 @@
             // TxtBxRaum5
             // 
             this.TxtBxRaum5.Location = new System.Drawing.Point(178, 346);
-            this.TxtBxRaum5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum5.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum5.Name = "TxtBxRaum5";
             this.TxtBxRaum5.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum5.TabIndex = 150;
@@ -832,7 +832,7 @@
             // TxtBxLehrer5
             // 
             this.TxtBxLehrer5.Location = new System.Drawing.Point(98, 346);
-            this.TxtBxLehrer5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer5.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer5.Name = "TxtBxLehrer5";
             this.TxtBxLehrer5.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer5.TabIndex = 149;
@@ -840,7 +840,7 @@
             // TxtBxFach5
             // 
             this.TxtBxFach5.Location = new System.Drawing.Point(19, 346);
-            this.TxtBxFach5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach5.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach5.Name = "TxtBxFach5";
             this.TxtBxFach5.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach5.TabIndex = 148;
@@ -848,7 +848,7 @@
             // TxtBxRaum6
             // 
             this.TxtBxRaum6.Location = new System.Drawing.Point(178, 369);
-            this.TxtBxRaum6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum6.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum6.Name = "TxtBxRaum6";
             this.TxtBxRaum6.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum6.TabIndex = 153;
@@ -856,7 +856,7 @@
             // TxtBxLehrer6
             // 
             this.TxtBxLehrer6.Location = new System.Drawing.Point(98, 369);
-            this.TxtBxLehrer6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer6.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer6.Name = "TxtBxLehrer6";
             this.TxtBxLehrer6.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer6.TabIndex = 152;
@@ -864,7 +864,7 @@
             // TxtBxFach6
             // 
             this.TxtBxFach6.Location = new System.Drawing.Point(19, 369);
-            this.TxtBxFach6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach6.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach6.Name = "TxtBxFach6";
             this.TxtBxFach6.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach6.TabIndex = 151;
@@ -872,7 +872,7 @@
             // TxtBxRaum7
             // 
             this.TxtBxRaum7.Location = new System.Drawing.Point(178, 392);
-            this.TxtBxRaum7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxRaum7.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxRaum7.Name = "TxtBxRaum7";
             this.TxtBxRaum7.Size = new System.Drawing.Size(76, 20);
             this.TxtBxRaum7.TabIndex = 156;
@@ -880,7 +880,7 @@
             // TxtBxLehrer7
             // 
             this.TxtBxLehrer7.Location = new System.Drawing.Point(98, 392);
-            this.TxtBxLehrer7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxLehrer7.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxLehrer7.Name = "TxtBxLehrer7";
             this.TxtBxLehrer7.Size = new System.Drawing.Size(76, 20);
             this.TxtBxLehrer7.TabIndex = 155;
@@ -888,7 +888,7 @@
             // TxtBxFach7
             // 
             this.TxtBxFach7.Location = new System.Drawing.Point(19, 392);
-            this.TxtBxFach7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtBxFach7.Margin = new System.Windows.Forms.Padding(2);
             this.TxtBxFach7.Name = "TxtBxFach7";
             this.TxtBxFach7.Size = new System.Drawing.Size(76, 20);
             this.TxtBxFach7.TabIndex = 154;
@@ -896,7 +896,7 @@
             // BtnAktualisieren
             // 
             this.BtnAktualisieren.Location = new System.Drawing.Point(19, 418);
-            this.BtnAktualisieren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnAktualisieren.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAktualisieren.Name = "BtnAktualisieren";
             this.BtnAktualisieren.Size = new System.Drawing.Size(75, 19);
             this.BtnAktualisieren.TabIndex = 157;
@@ -907,7 +907,7 @@
             // BtnAendern
             // 
             this.BtnAendern.Location = new System.Drawing.Point(178, 418);
-            this.BtnAendern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnAendern.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAendern.Name = "BtnAendern";
             this.BtnAendern.Size = new System.Drawing.Size(74, 19);
             this.BtnAendern.TabIndex = 158;

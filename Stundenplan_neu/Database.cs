@@ -430,10 +430,24 @@ namespace Stundenplan_neu
 
         public void LoeschenE(int t)
         {
+            t++;
             try
             {
-                t++;
-                MessageBox.Show(t.ToString());
+               // MessageBox.Show(t.ToString());
+                String sql;
+                sql = "DELETE FROM `noten` where fa_id=@del ";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@del", t);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            try
+            {
+                //t++;
+                //MessageBox.Show(t.ToString());
                 String sql;
                 sql = "DELETE FROM `fach` where fa_id=@del ";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);

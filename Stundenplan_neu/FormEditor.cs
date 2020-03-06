@@ -262,6 +262,7 @@ namespace Stundenplan_neu
 
         public void refreshFaecher()
         {
+           
             data.Lesen();
             //Die Textboxen mit den Eintragen von Fach/Lehrer/Raum aktualisieren
             TextBox[,] Textboxarray = new TextBox[7, 3] { { TxtBxFach1, TxtBxLehrer1, TxtBxRaum1 }, { TxtBxFach2, TxtBxLehrer2, TxtBxRaum2 }, { TxtBxFach3, TxtBxLehrer3, TxtBxRaum3 }, { TxtBxFach4, TxtBxLehrer4, TxtBxRaum4 }, { TxtBxFach5, TxtBxLehrer5, TxtBxRaum5 }, { TxtBxFach6, TxtBxLehrer6, TxtBxRaum6}, { TxtBxFach7, TxtBxLehrer7, TxtBxRaum7 } };
@@ -361,18 +362,18 @@ namespace Stundenplan_neu
                     if(x==6)
                     {
                         data.Schreiben();
-                        /*data.Lesen();
+                        //data.Lesen();
                         refreshFaecher();
                         Listeneuerstellen();
-                        refreshList();*/
+                        refreshList();
                     }
 
                 }
             }
             //Alles aktualisieren
-           // refreshFaecher();
-            //Listeneuerstellen();
-            //refreshList();
+            refreshFaecher();
+            Listeneuerstellen();
+            refreshList();
             //MessageBox.Show("Aenderungen gemacht");
 
         } 

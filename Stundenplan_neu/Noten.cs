@@ -22,6 +22,7 @@ namespace Stundenplan_neu
 
         private void Noten_Load(object sender, EventArgs e)
         {
+            data.Lesen();
             int zaeler = 0;
             //test
 
@@ -170,10 +171,10 @@ namespace Stundenplan_neu
             else
             { 
             Wert = int.Parse(tbF1S1.Text);  // Convertieren
-            if (Wert != 0)
-            {
-                i = i + 2;              // Notenzähler
-            }
+                if (Wert != 0)
+                {
+                    i = i + 2;              // Notenzähler
+                 }
             Summe = Wert;
             }
 
