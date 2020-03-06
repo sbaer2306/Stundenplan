@@ -402,10 +402,28 @@ namespace Stundenplan_neu
         }
         public void Loeschen()
         {
-            String sql;
-            sql = "DELETE FROM Fach ";
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            cmd.ExecuteNonQuery();
+            try
+            {
+                String sql;
+                sql = "DELETE FROM noten";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            try
+            {
+                String sql;
+                sql = "DELETE FROM fach";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
 
             return;
         }
