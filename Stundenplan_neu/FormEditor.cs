@@ -283,7 +283,7 @@ namespace Stundenplan_neu
                 //Die Erstellte Faecherliste mit der Combobox abgleichen 
                 Comboboxarray[x].DataSource= Fach.Faecherlist.ToList();
             }
-            CmbBxDel.DataSource = Fach.Faecherlist.ToList();
+            //CmbBxDel.DataSource = Fach.Faecherlist.ToList();
         }
 
         private void BtnAktualisieren_Click(object sender, EventArgs e)
@@ -426,7 +426,7 @@ namespace Stundenplan_neu
         {
 
         }
-
+        /*
         private void btndelcmb_Click(object sender, EventArgs e)
         {
             string b;
@@ -443,6 +443,6 @@ namespace Stundenplan_neu
                     return;
                 }
             }
-        }
+        }*/
     } 
 }

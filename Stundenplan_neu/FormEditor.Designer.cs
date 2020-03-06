@@ -123,8 +123,6 @@
             this.LblLehreraendern = new System.Windows.Forms.Label();
             this.LblRaumaendern = new System.Windows.Forms.Label();
             this.BtnBeenden = new System.Windows.Forms.Button();
-            this.CmbBxDel = new System.Windows.Forms.ComboBox();
-            this.btndelcmb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnFachhinzufuegen
@@ -955,33 +953,11 @@
             this.BtnBeenden.UseVisualStyleBackColor = true;
             this.BtnBeenden.Click += new System.EventHandler(this.BtnBeenden_Click);
             // 
-            // CmbBxDel
-            // 
-            this.CmbBxDel.FormattingEnabled = true;
-            this.CmbBxDel.Location = new System.Drawing.Point(939, 308);
-            this.CmbBxDel.Name = "CmbBxDel";
-            this.CmbBxDel.Size = new System.Drawing.Size(86, 21);
-            this.CmbBxDel.TabIndex = 163;
-            this.CmbBxDel.SelectedIndexChanged += new System.EventHandler(this.CmbBxDel_SelectedIndexChanged);
-            // 
-            // btndelcmb
-            // 
-            this.btndelcmb.Location = new System.Drawing.Point(939, 286);
-            this.btndelcmb.Margin = new System.Windows.Forms.Padding(2);
-            this.btndelcmb.Name = "btndelcmb";
-            this.btndelcmb.Size = new System.Drawing.Size(86, 19);
-            this.btndelcmb.TabIndex = 164;
-            this.btndelcmb.Text = "Löschen";
-            this.btndelcmb.UseVisualStyleBackColor = true;
-            this.btndelcmb.Click += new System.EventHandler(this.btndelcmb_Click);
-            // 
             // FormEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1051, 628);
-            this.Controls.Add(this.btndelcmb);
-            this.Controls.Add(this.CmbBxDel);
             this.Controls.Add(this.BtnBeenden);
             this.Controls.Add(this.LblRaumaendern);
             this.Controls.Add(this.LblLehreraendern);
@@ -1182,7 +1158,5 @@
         private System.Windows.Forms.Label LblLehreraendern;
         private System.Windows.Forms.Label LblRaumaendern;
         private System.Windows.Forms.Button BtnBeenden;
-        private System.Windows.Forms.ComboBox CmbBxDel;
-        private System.Windows.Forms.Button btndelcmb;
     }
 }
