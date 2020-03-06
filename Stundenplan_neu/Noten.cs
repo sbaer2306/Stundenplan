@@ -170,15 +170,15 @@ namespace Stundenplan_neu
             }
             else
             { 
-            Wert = int.Parse(tbF1S1.Text);  // Convertieren
+                Wert = int.Parse(tbF1S1.Text);  // Convertieren
                 if (Wert != 0)
                 {
                     i = i + 2;              // Notenzähler
                  }
-            Summe = Wert;
+                Summe = Wert;
             }
 
-            if (String.IsNullOrEmpty(tbF1S1.Text))
+            if (String.IsNullOrEmpty(tbF1S2.Text))
             {
                 Summe = 0;
             }
@@ -192,22 +192,36 @@ namespace Stundenplan_neu
                 Summe = Summe + Wert;
             }
 
-            Wert = int.Parse(tbF1S3.Text);
-            if (Wert != 0)
+            if (String.IsNullOrEmpty(tbF1S3.Text))
             {
-                i = i + 2;
+                Summe = 0;
             }
-            Summe = Summe + Wert;
-            SummeS = Summe * 2;       // Gewichtung
+            else
+            {
+                Wert = int.Parse(tbF1S3.Text);
+                if (Wert != 0)
+                {
+                    i = i + 2;
+                }
+                Summe = Summe + Wert;
+            }
+                SummeS = Summe * 2;       // Gewichtung
 
 
-            Wert = int.Parse(tbF1E1.Text);
-            if (Wert != 0)
+            if (String.IsNullOrEmpty(tbF1E1.Text))
             {
-                i = i + 1;
+                Summe = 0;
             }
-            Summe = Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
+            else
+            {
+                Wert = int.Parse(tbF1E1.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Wert;
+            }
+            if (String.IsNullOrEmpty(tbF1E2.Text))
             {
                 Summe = 0;
             }
@@ -220,12 +234,19 @@ namespace Stundenplan_neu
                 }
                 Summe = Summe + Wert;
             }
-            Wert = int.Parse(tbF1E3.Text);
-            if (Wert != 0)
+            if (String.IsNullOrEmpty(tbF1E3.Text))
             {
-                i = i + 1;
+                Summe = 0;
             }
-            Summe = Summe + Wert;
+            else
+            {
+                Wert = int.Parse(tbF1E3.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Summe + Wert;
+            }
             if (String.IsNullOrEmpty(tbF1E4.Text))
             {
                 Summe = 0;
@@ -267,85 +288,87 @@ namespace Stundenplan_neu
                 }
                 else
                 {
-
+                    Wert = int.Parse(tbF2S2.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Summe + Wert;
                 }
-                Wert = int.Parse(tbF2S2.Text);
+
+                if (String.IsNullOrEmpty(tbF2S3.Text))
+                {
+                    Summe = 0;
+                }
+                Wert = int.Parse(tbF2S3.Text);
                 if (Wert != 0)
                 {
                     i = i + 2;
                 }
                 Summe = Summe + Wert;
-                if (String.IsNullOrEmpty(tbF2S2.Text))
-            }
-            Wert = int.Parse(tbF2S3.Text);
-            if (Wert != 0)
-            {
-                i = i + 2;
-            }
-            Summe = Summe + Wert;
-            SummeS = Summe * 2;
+                SummeS = Summe * 2;
 
 
-            Wert = int.Parse(tbF2E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Wert;
-
-            if (String.IsNullOrEmpty(tbF2E4.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF2E4.Text);
+                Wert = int.Parse(tbF2E3.Text);
                 if (Wert != 0)
                 {
                     i = i + 1;
-                }
-                Summe = Summe + Wert;
-            }
-            Wert = int.Parse(tbF2E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1E4.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF1E4.Text);
-                if (Wert != 0)
-                {
-                    i = i + 1;
-                }
-
-                Summe = Summe + Wert;
-                SummeS = SummeS + Summe;
-                SummeS = SummeS / i;
-                SummeS = Math.Round(SummeS, 2);
-                Ergebnis = SummeS.ToString();
-                lblF2.Text = Ergebnis;
-            }
-
-            // Fach 3 Berechnung
-            if (String.IsNullOrEmpty(tbF3S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF3S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
                 }
                 Summe = Wert;
-            }
+
+                if (String.IsNullOrEmpty(tbF2E4.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF2E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+                Wert = int.Parse(tbF2E3.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Summe + Wert;
+                if (String.IsNullOrEmpty(tbF1E4.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF1E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+
+                    Summe = Summe + Wert;
+                    SummeS = SummeS + Summe;
+                    SummeS = SummeS / i;
+                    SummeS = Math.Round(SummeS, 2);
+                    Ergebnis = SummeS.ToString();
+                    lblF2.Text = Ergebnis;
+                }
+
+                // Fach 3 Berechnung
+                if (String.IsNullOrEmpty(tbF3S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF3S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                }
                 if (String.IsNullOrEmpty(tbF3S2.Text))
                 {
                     Summe = 0;
@@ -360,89 +383,323 @@ namespace Stundenplan_neu
                     }
                     Summe = Wert;
                 }
-            
-            Wert = int.Parse(tbF3S2.Text);
-            if (Wert != 0)
-            {
-                i = i + 2;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF3S3.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF3S3.Text);
+
+                Wert = int.Parse(tbF3S2.Text);
                 if (Wert != 0)
                 {
                     i = i + 2;
                 }
                 Summe = Summe + Wert;
-            }
+                if (String.IsNullOrEmpty(tbF3S3.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF3S3.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Summe + Wert;
+                }
 
-            SummeS = Summe * 2;
+                SummeS = Summe * 2;
 
 
-            Wert = int.Parse(tbF3E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
+                Wert = int.Parse(tbF3E3.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF3E3.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
                 Wert = int.Parse(tbF3E3.Text);
                 if (Wert != 0)
                 {
                     i = i + 1;
                 }
                 Summe = Summe + Wert;
-            }
-            Wert = int.Parse(tbF3E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF3E4.Text);
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF3E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+
+                if (Summe != 0)
+                {
+                    SummeS = SummeS + Summe;
+                    SummeS = SummeS / i;
+                    SummeS = Math.Round(SummeS, 2);
+                    Ergebnis = SummeS.ToString();
+                    lblF3.Text = Ergebnis;
+                }
+
+                // Fach 4 Berechnung
+                if (String.IsNullOrEmpty(tbF4S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF4S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                    if (String.IsNullOrEmpty(tbF1S1.Text))
+                    {
+                        Summe = 0;
+                    }
+                    else
+                    {
+                    }
+                    Wert = int.Parse(tbF4S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                }
+                Wert = int.Parse(tbF4S2.Text);
+                if (Wert != 0)
+                {
+                    i = i + 2;
+                }
+                Summe = Summe + Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF4S3.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Summe + Wert;
+                }
+
+                SummeS = Summe * 2;
+
+
+                Wert = int.Parse(tbF4E1.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF4E2.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+                Wert = int.Parse(tbF4E3.Text);
                 if (Wert != 0)
                 {
                     i = i + 1;
                 }
                 Summe = Summe + Wert;
-            }
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF4E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+                if (Summe != 0)
+                {
+                    SummeS = SummeS + Summe;
+                    SummeS = SummeS / i;
+                    SummeS = Math.Round(SummeS, 2);
+                    Ergebnis = SummeS.ToString();
+                    lblF4.Text = Ergebnis;
+                }
 
-            if (Summe != 0)
-            {
+                // Fach 5
+                if (String.IsNullOrEmpty(tbF5S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF5S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                    if (String.IsNullOrEmpty(tbF1S1.Text))
+                    {
+                        Summe = 0;
+                    }
+                    else
+                    {
+                    }
+                    Wert = int.Parse(tbF5S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                }
+                Wert = int.Parse(tbF5S2.Text);
+                if (Wert != 0)
+                {
+                    i = i + 2;
+                }
+                Summe = Summe + Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF5S3.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Summe + Wert;
+                }
+
+                SummeS = Summe * 2;
+
+                Wert = int.Parse(tbF5E1.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF5E2.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+                Wert = int.Parse(tbF5E3.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
+                }
+                Summe = Summe + Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF5E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+
                 SummeS = SummeS + Summe;
                 SummeS = SummeS / i;
                 SummeS = Math.Round(SummeS, 2);
                 Ergebnis = SummeS.ToString();
-                lblF3.Text = Ergebnis;
-            }
+                lblF5.Text = Ergebnis;
 
-            // Fach 4 Berechnung
-            if (String.IsNullOrEmpty(tbF4S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF4S1.Text);
+                // Fach 6
+                if (String.IsNullOrEmpty(tbF6S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF6S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                    if (String.IsNullOrEmpty(tbF1S1.Text))
+                    {
+                        Summe = 0;
+                    }
+                    else
+                    {
+                    }
+                    Wert = int.Parse(tbF6S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                }
+                Wert = int.Parse(tbF6S2.Text);
                 if (Wert != 0)
                 {
                     i = i + 2;
+                }
+                Summe = Summe + Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF6S3.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Summe + Wert;
+                }
+
+                SummeS = Summe * 2;
+
+
+                Wert = int.Parse(tbF6E1.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
                 }
                 Summe = Wert;
                 if (String.IsNullOrEmpty(tbF1S1.Text))
@@ -451,95 +708,93 @@ namespace Stundenplan_neu
                 }
                 else
                 {
+                    Wert = int.Parse(tbF6E2.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
                 }
-                Wert = int.Parse(tbF4S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Wert;
-            }
-            Wert = int.Parse(tbF4S2.Text);
-            if (Wert != 0)
-            {
-                i = i + 2;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF4S3.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Summe + Wert;
-            }
-
-            SummeS = Summe * 2;
-
-
-            Wert = int.Parse(tbF4E1.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF4E2.Text);
+                Wert = int.Parse(tbF6E3.Text);
                 if (Wert != 0)
                 {
                     i = i + 1;
                 }
                 Summe = Summe + Wert;
-            }
-            Wert = int.Parse(tbF4E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF4E4.Text);
-                if (Wert != 0)
+                if (String.IsNullOrEmpty(tbF1S1.Text))
                 {
-                    i = i + 1;
+                    Summe = 0;
                 }
-                Summe = Summe + Wert;
-            }
-            if (Summe != 0)
-            {
+                else
+                {
+                    Wert = int.Parse(tbF6E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
+                }
+
                 SummeS = SummeS + Summe;
                 SummeS = SummeS / i;
                 SummeS = Math.Round(SummeS, 2);
                 Ergebnis = SummeS.ToString();
-                lblF4.Text = Ergebnis;
-            }
+                lblF6.Text = Ergebnis;
 
-            // Fach 5
-            if (String.IsNullOrEmpty(tbF5S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF5S1.Text);
+                // Fach 7
+                if (String.IsNullOrEmpty(tbF7S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF7S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                    if (String.IsNullOrEmpty(tbF1S1.Text))
+                    {
+                        Summe = 0;
+                    }
+                    else
+                    {
+                    }
+                    Wert = int.Parse(tbF7S1.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Wert;
+                }
+                Wert = int.Parse(tbF7S2.Text);
                 if (Wert != 0)
                 {
                     i = i + 2;
+                }
+                Summe = Summe + Wert;
+                if (String.IsNullOrEmpty(tbF1S1.Text))
+                {
+                    Summe = 0;
+                }
+                else
+                {
+                    Wert = int.Parse(tbF7S3.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 2;
+                    }
+                    Summe = Summe + Wert;
+                }
+
+                SummeS = Summe * 2;
+
+
+                Wert = int.Parse(tbF7E1.Text);
+                if (Wert != 0)
+                {
+                    i = i + 1;
                 }
                 Summe = Wert;
                 if (String.IsNullOrEmpty(tbF1S1.Text))
@@ -548,270 +803,39 @@ namespace Stundenplan_neu
                 }
                 else
                 {
+                    Wert = int.Parse(tbF7E2.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
                 }
-                Wert = int.Parse(tbF5S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Wert;
-            }
-            Wert = int.Parse(tbF5S2.Text);
-            if (Wert != 0)
-            {
-                i = i + 2;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF5S3.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Summe + Wert;
-            }
-
-            SummeS = Summe * 2;
-
-            Wert = int.Parse(tbF5E1.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF5E2.Text);
+                Wert = int.Parse(tbF7E3.Text);
                 if (Wert != 0)
                 {
                     i = i + 1;
                 }
                 Summe = Summe + Wert;
-            }
-            Wert = int.Parse(tbF5E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF5E4.Text);
-                if (Wert != 0)
-                {
-                    i = i + 1;
-                }
-                Summe = Summe + Wert;
-            }
-
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;
-            SummeS = Math.Round(SummeS, 2);
-            Ergebnis = SummeS.ToString();
-            lblF5.Text = Ergebnis;
-
-            // Fach 6
-            if (String.IsNullOrEmpty(tbF6S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF6S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Wert;
                 if (String.IsNullOrEmpty(tbF1S1.Text))
                 {
                     Summe = 0;
                 }
                 else
                 {
+                    Wert = int.Parse(tbF7E4.Text);
+                    if (Wert != 0)
+                    {
+                        i = i + 1;
+                    }
+                    Summe = Summe + Wert;
                 }
-                Wert = int.Parse(tbF6S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Wert;
-            }
-            Wert = int.Parse(tbF6S2.Text);
-            if (Wert != 0)
-            {
-                i = i + 2;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF6S3.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Summe + Wert;
-            }
 
-            SummeS = Summe * 2;
-
-
-            Wert = int.Parse(tbF6E1.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
+                SummeS = SummeS + Summe;
+                SummeS = SummeS / i;
+                SummeS = Math.Round(SummeS, 2);
+                Ergebnis = SummeS.ToString();
+                lblF7.Text = Ergebnis;
             }
-            Summe = Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF6E2.Text);
-                if (Wert != 0)
-                {
-                    i = i + 1;
-                }
-                Summe = Summe + Wert;
-            }
-            Wert = int.Parse(tbF6E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF6E4.Text);
-                if (Wert != 0)
-                {
-                    i = i + 1;
-                }
-                Summe = Summe + Wert;
-            }
-
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;
-            SummeS = Math.Round(SummeS, 2);
-            Ergebnis = SummeS.ToString();
-            lblF6.Text = Ergebnis;
-
-            // Fach 7
-            if (String.IsNullOrEmpty(tbF7S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF7S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Wert;
-                if (String.IsNullOrEmpty(tbF1S1.Text))
-                {
-                    Summe = 0;
-                }
-                else
-                {
-                }
-                Wert = int.Parse(tbF7S1.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Wert;
-            }
-            Wert = int.Parse(tbF7S2.Text);
-            if (Wert != 0)
-            {
-                i = i + 2;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF7S3.Text);
-                if (Wert != 0)
-                {
-                    i = i + 2;
-                }
-                Summe = Summe + Wert;
-            }
-
-            SummeS = Summe * 2;
-
-
-            Wert = int.Parse(tbF7E1.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF7E2.Text);
-                if (Wert != 0)
-                {
-                    i = i + 1;
-                }
-                Summe = Summe + Wert;
-            }
-            Wert = int.Parse(tbF7E3.Text);
-            if (Wert != 0)
-            {
-                i = i + 1;
-            }
-            Summe = Summe + Wert;
-            if (String.IsNullOrEmpty(tbF1S1.Text))
-            {
-                Summe = 0;
-            }
-            else
-            {
-                Wert = int.Parse(tbF7E4.Text);
-                if (Wert != 0)
-                {
-                    i = i + 1;
-                }
-                Summe = Summe + Wert;
-            }
-
-            SummeS = SummeS + Summe;
-            SummeS = SummeS / i;
-            SummeS = Math.Round(SummeS, 2);
-            Ergebnis = SummeS.ToString();
-            lblF7.Text = Ergebnis;
         }
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
