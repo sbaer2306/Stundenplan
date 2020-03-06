@@ -101,8 +101,8 @@
             // 
             // btnende
             // 
-            this.btnende.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnende.Location = new System.Drawing.Point(14, 264);
+            this.btnende.Font = new System.Drawing.Font("Arial", 12.2F, System.Drawing.FontStyle.Bold);
+            this.btnende.Location = new System.Drawing.Point(11, 264);
             this.btnende.Margin = new System.Windows.Forms.Padding(2);
             this.btnende.Name = "btnende";
             this.btnende.Size = new System.Drawing.Size(84, 43);
@@ -190,8 +190,8 @@
             // 
             // btnberechnen
             // 
-            this.btnberechnen.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnberechnen.Location = new System.Drawing.Point(440, 264);
+            this.btnberechnen.Font = new System.Drawing.Font("Arial", 12.2F, System.Drawing.FontStyle.Bold);
+            this.btnberechnen.Location = new System.Drawing.Point(453, 265);
             this.btnberechnen.Margin = new System.Windows.Forms.Padding(2);
             this.btnberechnen.Name = "btnberechnen";
             this.btnberechnen.Size = new System.Drawing.Size(128, 45);
@@ -216,7 +216,7 @@
             // 
             this.label2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(193, 11);
+            this.label2.Location = new System.Drawing.Point(193, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 24);
@@ -228,7 +228,7 @@
             // 
             this.label1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(347, 7);
+            this.label1.Location = new System.Drawing.Point(348, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 24);
@@ -730,8 +730,8 @@
             // 
             // buttonSpeichern
             // 
-            this.buttonSpeichern.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSpeichern.Location = new System.Drawing.Point(224, 264);
+            this.buttonSpeichern.Font = new System.Drawing.Font("Arial", 12.2F, System.Drawing.FontStyle.Bold);
+            this.buttonSpeichern.Location = new System.Drawing.Point(213, 265);
             this.buttonSpeichern.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpeichern.Name = "buttonSpeichern";
             this.buttonSpeichern.Size = new System.Drawing.Size(164, 45);

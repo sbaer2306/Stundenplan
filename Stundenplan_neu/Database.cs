@@ -16,6 +16,8 @@ namespace Stundenplan_neu
 
         private MySqlConnection conn;
 
+        //Verbindung mit der Datenbank (localhost)
+
         public Database()
         {
             conn = new MySqlConnection(
@@ -38,6 +40,8 @@ namespace Stundenplan_neu
         {
             conn.Close();
         }
+
+        //Funktion zum Schreiben der Noten in die DB
 
         public void NotenSchreiben()
         {
@@ -67,6 +71,8 @@ namespace Stundenplan_neu
                 i++;
             }
 
+            //BArray Pro Fach erstellt /SA-EX
+
             try
             {
                 if (BArray[0, 0] == null)
@@ -76,7 +82,7 @@ namespace Stundenplan_neu
                     sql += "VALUES(@no_id1, @fa_id1, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
 
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
-
+                    //Fach1
                     cmd.Parameters.AddWithValue("@no_id1", 1);
                     cmd.Parameters.AddWithValue("@fa_id1", 1);
                     cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[7, 0]));
@@ -103,6 +109,227 @@ namespace Stundenplan_neu
                     cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[7, 4]);
                     cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[7, 5]);
                     cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[7, 6]);
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (BArray[1, 0] == null)
+                {
+                    String sql;
+                    sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                    sql += "VALUES(@no_id2, @fa_id2, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //Fach2
+                    cmd.Parameters.AddWithValue("@no_id2", 2);
+                    cmd.Parameters.AddWithValue("@fa_id2", 2);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[8, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[8, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[8, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[8, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[8, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[8, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[8, 6]);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    String sql;
+                    sql = "UPDATE `noten` SET `fa_id`=@fa_id2,`sa1`=@schulaufgabe1,`sa2`=@schulaufgabe2, `sa3`=@schulaufgabe3, `ex1`=@extemporale1, `ex2`=@extemporale2, `ex3`=@extemporale3, `ex4`=@extemporale4 WHERE no_id=1";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@fa_id2", 2);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[8, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[8, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[8, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[8, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[8, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[8, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[8, 6]);
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (BArray[2, 0] == null)
+                {
+                    String sql;
+                    sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                    sql += "VALUES(@no_id3, @fa_id3, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //Fach3
+                    cmd.Parameters.AddWithValue("@no_id3", 3);
+                    cmd.Parameters.AddWithValue("@fa_id3", 3);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[9, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[9, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[9, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[9, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[9, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[9, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[9, 6]);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    String sql;
+                    sql = "UPDATE `noten` SET `fa_id`=@fa_id3,`sa1`=@schulaufgabe1,`sa2`=@schulaufgabe2, `sa3`=@schulaufgabe3, `ex1`=@extemporale1, `ex2`=@extemporale2, `ex3`=@extemporale3, `ex4`=@extemporale4 WHERE no_id=1";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@fa_id3", 3);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[9, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[9, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[9, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[9, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[9, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[9, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[9, 6]);
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (BArray[3, 0] == null)
+                {
+                    String sql;
+                    sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                    sql += "VALUES(@no_id4, @fa_id4, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //Fach4
+                    cmd.Parameters.AddWithValue("@no_id4", 4);
+                    cmd.Parameters.AddWithValue("@fa_id4", 4);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[10, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[10, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[10, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[10, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[10, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[10, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[10, 6]);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    String sql;
+                    sql = "UPDATE `noten` SET `fa_id`=@fa_id4,`sa1`=@schulaufgabe1,`sa2`=@schulaufgabe2, `sa3`=@schulaufgabe3, `ex1`=@extemporale1, `ex2`=@extemporale2, `ex3`=@extemporale3, `ex4`=@extemporale4 WHERE no_id=1";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@fa_id4", 4);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[10, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[10, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[10, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[10, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[10, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[10, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[10, 6]);
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (BArray[4, 0] == null)
+                {
+                    String sql;
+                    sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                    sql += "VALUES(@no_id5, @fa_id5, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //Fach5
+                    cmd.Parameters.AddWithValue("@no_id5", 5);
+                    cmd.Parameters.AddWithValue("@fa_id5", 5);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[11, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[11, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[11, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[11, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[11, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[11, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[11, 6]);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    String sql;
+                    sql = "UPDATE `noten` SET `fa_id`=@fa_id5,`sa1`=@schulaufgabe1,`sa2`=@schulaufgabe2, `sa3`=@schulaufgabe3, `ex1`=@extemporale1, `ex2`=@extemporale2, `ex3`=@extemporale3, `ex4`=@extemporale4 WHERE no_id=1";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@fa_id5", 5);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[11, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[11, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[11, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[11, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[11, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[11, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[11, 6]);
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (BArray[5, 0] == null)
+                {
+                    String sql;
+                    sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                    sql += "VALUES(@no_id6, @fa_id6, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //Fach6
+                    cmd.Parameters.AddWithValue("@no_id1", 6);
+                    cmd.Parameters.AddWithValue("@fa_id1", 6);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[12, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[12, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[12, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[12, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[12, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[12, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[12, 6]);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    String sql;
+                    sql = "UPDATE `noten` SET `fa_id`=@fa_id6,`sa1`=@schulaufgabe1,`sa2`=@schulaufgabe2, `sa3`=@schulaufgabe3, `ex1`=@extemporale1, `ex2`=@extemporale2, `ex3`=@extemporale3, `ex4`=@extemporale4 WHERE no_id=1";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@fa_id6", 6);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[12, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[12, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[12, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[12, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[12, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[12, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[12, 6]);
+                    cmd.ExecuteNonQuery();
+                }
+                if (BArray[6, 0] == null)
+                {
+                    String sql;
+                    sql = "INSERT INTO noten(no_id, fa_id, sa1, sa2, sa3, ex1, ex2, ex3, ex4)";
+                    sql += "VALUES(@no_id7, @fa_id7, @schulaufgabe1, @schulaufgabe2, @schulaufgabe3, @extemporale1, @extemporale2, @extemporale3, @extemporale4)";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //Fach7
+                    cmd.Parameters.AddWithValue("@no_id7", 7);
+                    cmd.Parameters.AddWithValue("@fa_id7", 7);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[13, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[13, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[13, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[13, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[13, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[13, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[13, 6]);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    String sql;
+                    sql = "UPDATE `noten` SET `fa_id`=@fa_id7,`sa1`=@schulaufgabe1,`sa2`=@schulaufgabe2, `sa3`=@schulaufgabe3, `ex1`=@extemporale1, `ex2`=@extemporale2, `ex3`=@extemporale3, `ex4`=@extemporale4 WHERE no_id=1";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@fa_id7", 7);
+                    cmd.Parameters.AddWithValue("@schulaufgabe1", Convert.ToInt32(Fach.Array[13, 0]));
+                    cmd.Parameters.AddWithValue("@schulaufgabe2", Fach.Array[13, 1]);
+                    cmd.Parameters.AddWithValue("@schulaufgabe3", Fach.Array[13, 2]);
+                    cmd.Parameters.AddWithValue("@extemporale1", Fach.Array[13, 3]);
+                    cmd.Parameters.AddWithValue("@extemporale2", Fach.Array[13, 4]);
+                    cmd.Parameters.AddWithValue("@extemporale3", Fach.Array[13, 5]);
+                    cmd.Parameters.AddWithValue("@extemporale4", Fach.Array[13, 6]);
                     cmd.ExecuteNonQuery();
                 }
 
